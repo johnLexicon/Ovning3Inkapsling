@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace Ovningssamling_Inkapsling_arv_o_polymorfism
+namespace OvningssamlingInkapslingArvOchPolymorfism
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }
