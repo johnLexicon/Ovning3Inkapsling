@@ -10,6 +10,9 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 {
     class Person
     {
+        private int age; //Field
+
+        public int Age { get => age; set => age = value; } // Properties
     }
 
     /* TODO
