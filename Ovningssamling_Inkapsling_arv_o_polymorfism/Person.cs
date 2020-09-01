@@ -10,9 +10,13 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 {
     class Person
     {
-        private int age; //Field
+        #region Fields
+        private int age;
+        #endregion
 
-        public int Age { get => age; set => age = value; } // Properties
+        #region Properties
+        public int Age { get => age; set => age = value; }
+        #endregion
     }
 
     /* TODO
