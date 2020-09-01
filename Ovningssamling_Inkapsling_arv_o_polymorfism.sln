@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ovningssamling_Inkapsling_arv_o_polymorfism", "Ovningssamling_Inkapsling_arv_o_polymorfism\Ovningssamling_Inkapsling_arv_o_polymorfism.csproj", "{B77BFFB3-41EE-4CC8-83A1-2A1A2E8C24A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B77BFFB3-41EE-4CC8-83A1-2A1A2E8C24A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B77BFFB3-41EE-4CC8-83A1-2A1A2E8C24A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B77BFFB3-41EE-4CC8-83A1-2A1A2E8C24A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B77BFFB3-41EE-4CC8-83A1-2A1A2E8C24A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F51A5A6F-1820-467D-A83E-8C75E2CF38FF}
+	EndGlobalSection
+EndGlobal
