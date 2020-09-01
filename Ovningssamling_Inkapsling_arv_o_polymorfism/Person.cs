@@ -33,5 +33,14 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
     validering inte fullföljs, undantaget ska innehålla ett beskrivande
     meddelande.
     Se till att hantera undantagen i Program-klassen med en try-catch block.
+
+
+    I PersonHandler , skriv en metod som skapar en person med angivna värden:
+    public Person CreatePerson (int age , string fname ,
+    string lname , double height , double weight )
+
+
+    Fortsätt skapa metoder i PersonHandler för att kunna hantera samtliga
+    operationer som man kan vilja göra med en Person .
      */
 }
