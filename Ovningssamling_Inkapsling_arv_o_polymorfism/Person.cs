@@ -19,8 +19,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
         #endregion
     }
 
-    /* TODO
-     * Skapa en klass Person och ge den följande privata attribut:
+    /* TODO: Skapa en klass Person och ge den följande privata attribut:
     age, fName, lName, height, weight
     Skapa publika properties med get och set som hämtar eller sätter tilldelad variabel.
     Instansiera en person i program.cs , kommer du direkt åt variablerna?
