@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
+// TODO add comments
+/// <summary>
+/// 
+/// </summary>
 namespace OvningssamlingInkapslingArvOchPolymorfism
 {
     class Person
