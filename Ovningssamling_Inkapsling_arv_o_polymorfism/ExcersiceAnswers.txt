@@ -4,3 +4,9 @@ Svar: i Bird
 
 14. F: Om alla djur behöver det nya attributet, vart skulle man lägga det då?
 Svar: i Animal
+
+9. F: Försök att lägga till en häst i listan av hundar. Varför fungerar inte det?
+Svar:En Horse är inte en Dog trots att de båda ärver Animal
+
+10. F: Vilken typ måste listan vara för att alla klasser skall kunna lagras tillsammans?
+Svar: Animal

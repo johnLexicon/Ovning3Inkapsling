@@ -7,81 +7,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
     {
         static void Main(string[] args)
         {
-            AnimalList();
-            DogList();
-
-            /*
-            Person person = null;
-
-            try
-            {
-                person = new Person("Stefan", "Elmgren");
-                Console.WriteLine(person.ToString()); // TODO ///////////////
-            }
-            catch (Exception)
-            {
-                
-            }
-            */
-
-            /*
-             * PersonHandler.SetAge(person, 53);
-            Console.WriteLine(person.ToString()); // TODO ///////////////
-            */
-
-            Person person2 = PersonHandler.CreatePerson(10, "Lisa", "Karlsson", 140, 35);
-            //Console.WriteLine(person2.ToString()); // TODO Testutskrift ///////////////
-
-            PersonHandler.SetFirstName(person2, "Gittan");
-            //Console.WriteLine(person2.ToString()); // TODO Testutskrift ///////////////
-
-            Person person3 = PersonHandler.CreatePerson(13, "Arne", "Olsson", 175, 81);
-            //Console.WriteLine(person3.ToString()); // TODO Testutskrift ///////////////
-
-            PersonHandler.SetWeight(person3, 83);
-            //Console.WriteLine(person3.ToString()); // TODO Testutskrift ///////////////
-
-            PersonHandler.SetLastName(person3, "Larsson");
-            //Console.WriteLine(person3.ToString()); // TODO Testutskrift ///////////////
-
-            PersonHandler.SetHeight(person3, 165);
-            //Console.WriteLine(person3.ToString()); // TODO Testutskrift ///////////////
-
-            PersonHandler.SetAge(person3, 14);
-            //Console.WriteLine(person3.ToString()); // TODO Testutskrift ///////////////
-        }
-
-        private static void DogList()
-        {
-            List<Dog> dogs = new List<Dog>();
-
-            dogs.Add(new Dog()
-            {
-                Age = 11,
-                Name = "Larsa",
-                Weight = 18,
-                Iq = 28
-            });
-
-            dogs.Add(new Dog()
-            {
-                Age = 12,
-                Name = "Fido",
-                Weight = 19,
-                Iq = 30
-            });
-
-            dogs.Add(new Dog()
-            {
-                Age = 4,
-                Name = "Lissen",
-                Weight = 29,
-                Iq = 35
-            });
-        }
-
-        private static void AnimalList()
-        {
+            
             List<Animal> animals = new List<Animal>();
 
             animals.Add(new Pelican()
@@ -127,6 +53,84 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
                     person.Talk();
                 }
             }
+
+            Console.WriteLine("Animal stats");
+
+            foreach (var animal in animals)
+            {
+                Console.WriteLine(animal.Stats());
+            }
+
+            List<Dog> dogs = new List<Dog>();
+
+            dogs.Add(new Dog()
+            {
+                Age = 11,
+                Name = "Larsa",
+                Weight = 18,
+                Iq = 28
+            });
+
+            dogs.Add(new Dog()
+            {
+                Age = 12,
+                Name = "Fido",
+                Weight = 19,
+                Iq = 30
+            });
+
+            dogs.Add(new Dog()
+            {
+                Age = 4,
+                Name = "Lissen",
+                Weight = 29,
+                Iq = 35
+            });
+
+            foreach (var animal in animals)
+            {
+
+            }
+
+            /*
+            Person person = null;
+
+            try
+            {
+                person = new Person("Stefan", "Elmgren");
+                Console.WriteLine(person.ToString()); // TODO ///////////////
+            }
+            catch (Exception)
+            {
+                
+            }
+            */
+
+            /*
+             * PersonHandler.SetAge(person, 53);
+            Console.WriteLine(person.ToString()); // TODO ///////////////
+            */
+
+            Person person2 = PersonHandler.CreatePerson(10, "Lisa", "Karlsson", 140, 35);
+            //Console.WriteLine(person2.ToString()); // TODO Testutskrift ///////////////
+
+            PersonHandler.SetFirstName(person2, "Gittan");
+            //Console.WriteLine(person2.ToString()); // TODO Testutskrift ///////////////
+
+            Person person3 = PersonHandler.CreatePerson(13, "Arne", "Olsson", 175, 81);
+            //Console.WriteLine(person3.ToString()); // TODO Testutskrift ///////////////
+
+            PersonHandler.SetWeight(person3, 83);
+            //Console.WriteLine(person3.ToString()); // TODO Testutskrift ///////////////
+
+            PersonHandler.SetLastName(person3, "Larsson");
+            //Console.WriteLine(person3.ToString()); // TODO Testutskrift ///////////////
+
+            PersonHandler.SetHeight(person3, 165);
+            //Console.WriteLine(person3.ToString()); // TODO Testutskrift ///////////////
+
+            PersonHandler.SetAge(person3, 14);
+            //Console.WriteLine(person3.ToString()); // TODO Testutskrift ///////////////
         }
     }
 }

@@ -15,6 +15,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 
         public override string Stats()
         {
+            this.
             return eyeColor;
         }
 
