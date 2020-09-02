@@ -112,6 +112,16 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
             {
                 message += $", Age: {Age}";
             }
+
+            if (Height > 0)
+            {
+                message += $", Height: {Height} cm";
+            }
+
+            if (Weight > 0)
+            {
+                message += $", Weight: {Weight} kilos";
+            }
             return message;
         }
         #endregion
