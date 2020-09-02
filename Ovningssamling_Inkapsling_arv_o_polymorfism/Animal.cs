@@ -6,7 +6,7 @@ namespace OvnSamlingInkapslArvOPolym
 {
     public abstract class Animal
     {
-        #region properties /////////////////////////////////////////////////////////////////////////////
+        #region properties **********************************************************************************
 
         public string Name { get; set; }
         public int Weight { get; set; }
@@ -14,7 +14,7 @@ namespace OvnSamlingInkapslArvOPolym
 
         #endregion
 
-        #region constructors ////////////////////////////////////////////////////////////////////////////
+        #region constructors ********************************************************************************
 
         public Animal()
         {
@@ -23,7 +23,7 @@ namespace OvnSamlingInkapslArvOPolym
 
         #endregion
 
-        #region methods //////////////////////////////////////////////////////////////////////////////////
+        #region methods *************************************************************************************
 
         public abstract void DoSound();
 
