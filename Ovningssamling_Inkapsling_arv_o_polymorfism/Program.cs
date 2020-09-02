@@ -9,15 +9,15 @@ namespace OvnSamlingInkapslArvOPolym
         static void Main(string[] args)
         {
             // TestingPerson();
-
             TestingAnimal();
         }
 
+        #region methods //////////////////////////////////////////////////////////////////////////////////
         private static void TestingAnimal()
         {
             List<Animal> animals = new List<Animal>();
 
-            animals.Add(new Pelican()
+            animals.Add(new Pelican() 
             {
                 beakVolume = 10,
                 Age = 2,
@@ -73,6 +73,7 @@ namespace OvnSamlingInkapslArvOPolym
                     Console.Write(", Sound 2: ");
                     person.Talk();
                 }
+
                 Console.WriteLine();
             }
 
@@ -93,7 +94,6 @@ namespace OvnSamlingInkapslArvOPolym
                 {
                     Console.WriteLine(animal.Stats());
                 }
-
             }
 
             List<Dog> dogs = new List<Dog>();
@@ -123,6 +123,7 @@ namespace OvnSamlingInkapslArvOPolym
             });
         }
 
+
         private static void TestingPerson()
         {
             Person person = null;
@@ -131,7 +132,9 @@ namespace OvnSamlingInkapslArvOPolym
             {
                 person = new Person("Stefan", "Elmgren");
             }
-            catch (Exception) { }
+            catch (Exception) 
+            { 
+            }
 
             PersonHandler.SetAge(person, 53);
             Person person2 = PersonHandler.CreatePerson(10, "Lisa", "Karlsson", 140, 35);
@@ -142,5 +145,6 @@ namespace OvnSamlingInkapslArvOPolym
             PersonHandler.SetHeight(person3, 165);
             PersonHandler.SetAge(person3, 14);
         }
+        #endregion
     }
 }
