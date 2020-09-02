@@ -35,7 +35,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 
             foreach (var animal in animals)
             {
-                Console.WriteLine($"{animal.GetType()}");
+                Console.WriteLine($"{animal}");
                 Console.WriteLine($"Namn: {animal.Name}, Weight: {animal.Weight}, Age: {animal.Age}");
                 animal.DoSound();
             }
