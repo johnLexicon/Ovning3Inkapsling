@@ -21,10 +21,8 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
             PersonHandler.SetAge(person, 53);
             Console.WriteLine(person.ToString()); // TODO ///////////////
 
-
-            //PersonHandler personhandler = new PersonHandler();/////////////////
-            //personhandler.SetAge(person, 10);///////////////////////
-
+            Person person2 = PersonHandler.CreatePerson(10, "Lisa", "Karlsson", 1.40, 35);
+            Console.WriteLine(person2.ToString()); // TODO ///////////////
         }
     }
 }

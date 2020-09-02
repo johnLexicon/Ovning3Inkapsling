@@ -6,9 +6,15 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 {
     public static class PersonHandler
     {
-        public static void SetAge(Person pers, int age) 
+        public static void SetAge(Person pers, int age)
         {
             pers.Age = age;
+        }
+
+        public static Person CreatePerson(int age, string fname, string lname, double height, double weight)
+        {
+            Person person = new Person(age, fname, lname, height, weight);
+            return person;
         }
     }
 

@@ -79,7 +79,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 
         #endregion
 
-        #region Constructors
+        #region Constructors /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         // Constructor 1
         public Person(string firstName, string lastName)
@@ -93,11 +93,18 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
         {
             Age = age;
         }
+
+        // Constructor 3
+        public Person(int age, string fname, string lname, double height, double weight) :this(fname, lname, age) // Calling constructor 2
+        {
+            Height = height;
+            Weight = weight;
+        }
         #endregion
 
-        
 
 
+        #region methods ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         public override string ToString()
         {
             string message = $"First name: {FName}, Last name: {LName}";
@@ -107,9 +114,10 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
             }
             return message;
         }
+        #endregion
     }
 
-   
+
 
 
     /* TODO: Skapa en klass Person och ge den följande privata attribut:
