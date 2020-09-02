@@ -8,6 +8,13 @@ namespace OvnSamlingInkapslArvOPolym
     {
         static void Main(string[] args)
         {
+            // TestingPerson();
+
+            TestingAnimal();
+        }
+
+        private static void TestingAnimal()
+        {
             List<Animal> animals = new List<Animal>();
 
             animals.Add(new Pelican()
@@ -114,11 +121,9 @@ namespace OvnSamlingInkapslArvOPolym
                 Weight = 29,
                 Iq = 35
             });
-
-            // testingPerson();
         }
 
-        private static void testingPerson()
+        private static void TestingPerson()
         {
             Person person = null;
 
