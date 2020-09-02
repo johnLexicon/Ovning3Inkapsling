@@ -78,7 +78,15 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
         public double Weight { get; set; }
 
         #endregion
+
+        #region Constructors
+        public Person()
+        {
+
+        }
+        #endregion
     }
+
 
     /* TODO: Skapa en klass Person och ge den följande privata attribut:
     age, fName, lName, height, weight

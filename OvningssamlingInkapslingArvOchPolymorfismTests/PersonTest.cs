@@ -51,7 +51,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfismTests
 
             // Assert
             Assert.AreEqual(expected, actual);
-            Assert.AreEqual(expected2, actual2");
+            Assert.AreEqual(expected2, actual2);
         }
     }
 }

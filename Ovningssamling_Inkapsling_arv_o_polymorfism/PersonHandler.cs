@@ -6,6 +6,10 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 {
     class PersonHandler
     {
+        public void SetAge(Person pers, int age) 
+        {
+
+        }
     }
 
     /*
