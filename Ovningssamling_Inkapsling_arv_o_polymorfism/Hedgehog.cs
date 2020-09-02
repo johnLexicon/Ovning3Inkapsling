@@ -7,5 +7,10 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
     class Hedgehog : Animal
     {
         public int NrOfSpikes { get; set; }
+
+        public override void DoSound()
+        {
+            Console.WriteLine("Squeak");
+        }
     }
 }

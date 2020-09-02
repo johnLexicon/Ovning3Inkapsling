@@ -7,5 +7,10 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
     class Bird : Animal
     {
         public int WingSpan { get; set; }
+
+        public override void DoSound()
+        {
+            Console.WriteLine("Tweet");
+        }
     }
 }

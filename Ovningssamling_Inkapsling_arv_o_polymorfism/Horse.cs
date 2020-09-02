@@ -7,5 +7,10 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
     class Horse : Animal //Inherits Animal
     {
         public string maneColour { get; set; }
+
+        public override void DoSound()
+        {
+            Console.WriteLine("Neigh");
+        }
     }
 }

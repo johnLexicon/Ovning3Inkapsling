@@ -7,5 +7,10 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
     class Wolf : Animal
     {
         public string eyeColor { get; set; }
+        public override void DoSound()
+        {
+            Console.WriteLine("Howl");
+        }
+
     }
 }
