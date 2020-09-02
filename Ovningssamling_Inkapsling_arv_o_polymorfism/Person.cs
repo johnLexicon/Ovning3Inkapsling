@@ -100,7 +100,12 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 
         public override string ToString()
         {
-            return $"First name: {FName}, Last name: {LName}, Age: {Age}";
+            string message = $"First name: {FName}, Last name: {LName}";
+            if (Age > 0)
+            {
+                message += ", Age: {Age}";
+            }
+            return message;
         }
     }
 

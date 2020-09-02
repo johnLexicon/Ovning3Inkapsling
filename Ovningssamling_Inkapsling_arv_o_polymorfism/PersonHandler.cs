@@ -6,6 +6,11 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 {
     class PersonHandler
     {
+        public PersonHandler(Person person, int age)
+        {
+            this.SetAge(person, age);
+        }
+
         public void SetAge(Person pers, int age) 
         {
 
