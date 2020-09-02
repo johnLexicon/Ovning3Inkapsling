@@ -6,6 +6,6 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 {
     class Horse : Animal //Inherits Animal
     {
-
+        public string maneColour { get; set; }
     }
 }

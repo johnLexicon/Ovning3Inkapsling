@@ -6,5 +6,6 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 {
     class Bird : Animal
     {
+        public int WingSpan { get; set; }
     }
 }

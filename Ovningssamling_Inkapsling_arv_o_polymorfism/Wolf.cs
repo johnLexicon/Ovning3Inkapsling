@@ -6,5 +6,6 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 {
     class Wolf : Animal
     {
+        public string eyeColor { get; set; }
     }
 }

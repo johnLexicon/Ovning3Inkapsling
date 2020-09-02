@@ -6,5 +6,6 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 {
     class Worm : Animal
     {
+        public bool sPoisonous { get; set; }
     }
 }

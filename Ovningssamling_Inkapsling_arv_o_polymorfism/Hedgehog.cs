@@ -6,5 +6,6 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 {
     class Hedgehog : Animal
     {
+        public int NrOfSpikes { get; set; }
     }
 }
