@@ -7,9 +7,26 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
     public abstract class Animal
     {
         #region properties /////////////////////////////////////////////////////////////////////////////
+
         public int Name { get; set; }
         public int Weight { get; set; }
         public int Age { get; set; }
+
+        #endregion
+
+        #region constructors ////////////////////////////////////////////////////////////////////////////
+
+        public Animal()
+        {
+
+        }
+
+        #endregion
+
+        #region methods //////////////////////////////////////////////////////////////////////////////////
+
+        public abstract void DoSound();
+
         #endregion
     }
 
