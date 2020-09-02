@@ -33,11 +33,24 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
                 Weight = 125,
             });
 
+            animals.Add(new Wolfman()
+            {
+                Age = 35,
+                Name = "Ulrik",
+                Weight = 75,
+            });
+
             foreach (var animal in animals)
             {
                 Console.WriteLine($"{animal}");
                 Console.WriteLine($"Namn: {animal.Name}, Weight: {animal.Weight}, Age: {animal.Age}");
                 animal.DoSound();
+
+                if (animal is IPerson)
+                {
+                    IPerson person = (IPerson)animal; // Cast Animal to IPerson
+                    person.Talk();
+                }
             }
 
             /*
