@@ -7,7 +7,7 @@ using System.Threading.Channels;
 /// <summary>
 /// 
 /// </summary>
-namespace OvningssamlingInkapslingArvOchPolymorfism
+namespace OvnSamlingInkapslArvOPolym
 {
     public class Person
     {

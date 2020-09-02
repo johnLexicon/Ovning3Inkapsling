@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Net.Cache;
 
-namespace OvningssamlingInkapslingArvOchPolymorfism
+namespace OvnSamlingInkapslArvOPolym
 {
     class Program
     {

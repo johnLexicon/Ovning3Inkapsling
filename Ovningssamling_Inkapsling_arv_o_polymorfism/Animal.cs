@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace OvningssamlingInkapslingArvOchPolymorfism
+namespace OvnSamlingInkapslArvOPolym
 {
     public abstract class Animal
     {

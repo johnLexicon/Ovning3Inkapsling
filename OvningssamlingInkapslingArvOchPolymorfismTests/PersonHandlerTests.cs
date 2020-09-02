@@ -1,10 +1,10 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using OvningssamlingInkapslingArvOchPolymorfism;
+using OvnSamlingInkapslArvOPolym;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace OvningssamlingInkapslingArvOchPolymorfism.Tests
+namespace OvnSamlingInkapslArvOPolym.Tests
 {
     [TestClass()]
     public class PersonHandlerTests

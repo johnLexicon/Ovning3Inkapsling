@@ -1,4 +1,4 @@
-using OvningssamlingInkapslingArvOchPolymorfism;
+using OvnSamlingInkapslArvOPolym;
 using Microsoft.VisualStudio.TestPlatform.Utilities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Globalization;

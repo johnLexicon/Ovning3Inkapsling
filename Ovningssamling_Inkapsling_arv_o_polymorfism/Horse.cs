@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace OvningssamlingInkapslingArvOchPolymorfism
+namespace OvnSamlingInkapslArvOPolym
 {
     class Horse : Animal //Inherits Animal
     {
