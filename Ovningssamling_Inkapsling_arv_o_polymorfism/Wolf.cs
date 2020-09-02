@@ -6,7 +6,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 {
     class Wolf : Animal
     {
-        public string eyeColor { get; set; }
+        public string EyeColor { get; set; }
         
         public override void DoSound()
         {
@@ -15,8 +15,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 
         public override string Stats()
         {
-            this.
-            return eyeColor;
+            return $"{base.Stats()}, Eye color: {EyeColor}";
         }
 
     }

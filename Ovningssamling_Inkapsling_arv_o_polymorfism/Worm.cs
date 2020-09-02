@@ -6,7 +6,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 {
     class Worm : Animal
     {
-        public bool sPoisonous { get; set; }
+        public bool IsPoisonous { get; set; }
 
         public override void DoSound()
         {
@@ -15,7 +15,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 
         public override string Stats()
         {
-            return sPoisonous.ToString();
+            return $"{base.Stats()}, Is poisonous: {IsPoisonous.ToString()}";
         }
     }
 }

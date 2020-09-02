@@ -10,7 +10,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 
         public override string Stats()
         {
-            return NeckLength.ToString();
+            return $"{base.Stats()}, Neck length: {NeckLength.ToString()}";
         }
     }
 }

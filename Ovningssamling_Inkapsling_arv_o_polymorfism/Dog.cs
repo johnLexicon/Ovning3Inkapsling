@@ -15,7 +15,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 
         public override string Stats()
         {
-            return Iq.ToString();
+            return $"{base.Stats()}, IQ: {Iq.ToString()}";
         }
     }
 }

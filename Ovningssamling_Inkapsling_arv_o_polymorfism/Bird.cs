@@ -15,7 +15,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 
         public override string Stats()
         {
-            return WingSpan.ToString();
+            return $"{base.Stats()}, Wingspan: {WingSpan.ToString()}";
         }
     }
 }

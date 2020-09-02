@@ -15,7 +15,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 
         public override string Stats()
         {
-            return NrOfSpikes.ToString();
+            return $"{base.Stats()}, Number of spikes: {NrOfSpikes.ToString()}";
         }
     }
 }

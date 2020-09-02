@@ -10,7 +10,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 
         public override string Stats()
         {
-            return beakVolume.ToString();
+            return $"{base.Stats()}, Beak volume: {beakVolume.ToString()}";
         }
     }
 }

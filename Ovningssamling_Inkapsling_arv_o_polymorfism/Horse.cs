@@ -15,7 +15,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 
         public override string Stats()
         {
-            return maneColour;
+            return $"{base.Stats()}, Colour of mane: {maneColour}";
         }
     }
 }

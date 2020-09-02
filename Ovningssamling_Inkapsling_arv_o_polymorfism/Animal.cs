@@ -27,11 +27,9 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 
         public abstract void DoSound();
 
-        public string Stats() 
+        public virtual string Stats()
         {
-            return $"Name: {Name} Age: {Age} Weight: {Weight}";
-        }
-        
+            return $"Name: {Name}, Age: {Age}, Weight: {Weight}";
         }
 
         #endregion

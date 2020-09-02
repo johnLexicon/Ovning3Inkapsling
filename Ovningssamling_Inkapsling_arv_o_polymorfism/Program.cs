@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Cache;
 
 namespace OvningssamlingInkapslingArvOchPolymorfism
 {
@@ -7,7 +8,18 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
     {
         static void Main(string[] args)
         {
-            
+            /*
+            Bird bird = new Bird();
+            bird.Name = "Berit";
+            bird.Age = 77;
+            bird.Weight = 5;
+            bird.WingSpan = 3;
+
+            Console.WriteLine("Bird Stats:");
+            Console.WriteLine(bird.Stats());
+            Console.WriteLine();
+            */
+
             List<Animal> animals = new List<Animal>();
 
             animals.Add(new Pelican()
