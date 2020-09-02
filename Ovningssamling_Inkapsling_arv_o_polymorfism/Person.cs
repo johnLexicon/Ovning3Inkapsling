@@ -8,7 +8,7 @@ using System.Text;
 /// </summary>
 namespace OvningssamlingInkapslingArvOchPolymorfism
 {
-    class Person
+    public class Person
     {
         #region Properties
         private int age;

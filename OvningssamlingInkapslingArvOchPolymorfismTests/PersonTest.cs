@@ -1,0 +1,54 @@
+using OvningssamlingInkapslingArvOchPolymorfism;
+using Microsoft.VisualStudio.TestPlatform.Utilities;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Globalization;
+using System;
+
+namespace OvningssamlingInkapslingArvOchPolymorfismTests
+{
+    [TestClass]
+    public class PersonTest
+    {
+        [TestMethod]
+        public void TestCorrectFirstName()
+        {
+            // Arrange
+            string firstName = "Stefan";
+            Person person = new Person();
+            var expected = "Stefan";
+
+            // Act
+            person.FName = firstName;
+            string actual = person.FName;
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+
+        
+        [TestMethod]
+        public void TestFirstNameTooShortThrowsArgumentException()
+        {
+            // Arrange
+            string firstName = "S";
+            Person person = new Person();
+            Exception exception = null;
+            string expected = "First name should contain between two and ten letters!";
+
+            // Act
+            try
+            {
+                person.FName = firstName; //This should throw exeption
+            }
+            catch (Exception ex)
+            {
+                exception = ex;
+            }
+
+            string actual = exception.Message;
+
+            // Assert
+            Assert.AreEqual(expected, actual);
+        }
+    }
+}
