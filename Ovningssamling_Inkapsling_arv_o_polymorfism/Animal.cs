@@ -27,6 +27,12 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 
         public abstract void DoSound();
 
+        /*
+        Skapa metoden Stats() i klassen Animal som har returtypen string. Metoden ska
+kunna overridas i dess Subklasser.Metoden ska returnera alla egenskaper(properties) som
+djuret har.
+        */
+
         #endregion
     }
 
