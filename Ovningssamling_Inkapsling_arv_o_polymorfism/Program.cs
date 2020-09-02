@@ -65,15 +65,20 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 
             foreach (var animal in animals)
             {
-                Console.WriteLine($"{animal.GetType()}");
-                Console.WriteLine($"Namn: {animal.Name}, Weight: {animal.Weight}, Age: {animal.Age}");
+                // Get the objectname without the "OvningssamlingInkapslingArvOchPolymorfism" before the dot
+                string[] objectName = animal.GetType().ToString().Split('.');
+                Console.Write($"Type {objectName[1]}, ");
+                Console.Write($"Namn: {animal.Name}, Weight: {animal.Weight}, Age: {animal.Age}, ");
+                Console.Write("Sound: ");
                 animal.DoSound();
 
                 if (animal is IPerson)
                 {
                     IPerson person = (IPerson)animal; // Cast Animal to IPerson
+                    Console.Write(", Sound 2: ");
                     person.Talk();
                 }
+                Console.WriteLine();
             }
 
             Console.WriteLine();

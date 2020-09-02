@@ -8,7 +8,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
     {
         public void Talk() 
         {
-            Console.WriteLine("Öööööh");
+            Console.Write("Öööööh");
         }
     }
 }

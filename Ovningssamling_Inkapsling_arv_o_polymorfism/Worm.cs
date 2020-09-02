@@ -10,7 +10,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 
         public override void DoSound()
         {
-            Console.WriteLine("Ssssss");
+            Console.Write("Ssssss");
         }
 
         public override string Stats()
