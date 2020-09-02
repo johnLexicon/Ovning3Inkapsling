@@ -17,8 +17,8 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
         public int Age
         {
             get { return age; }
-            
-            set 
+
+            set
             {
                 if (value > 0)
                 {
@@ -32,15 +32,15 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
         }
 
         private string fName;
-        
+
         /// <summary>
         /// FName är obligatorisk och får inte vara mindre än 2 tecken eller längre än 10 tecken.
         /// </summary>
-        public string FName 
+        public string FName
         {
             get { return fName; }
 
-            set 
+            set
             {
                 if (value.Length >= 2 && value.Length <= 10)
                 {
@@ -61,12 +61,12 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
         public string LName
         {
             get { return lName; }
-            
-            set 
+
+            set
             {
-                if ( value.Length >= 3 && value.Length <= 15 )
+                if (value.Length >= 3 && value.Length <= 15)
                 {
-                    lName = value; 
+                    lName = value;
                 }
                 else
                 {
@@ -75,7 +75,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
             }
         }
 
-        public double Height { get; set; }
+        public int Height { get; set; }
         public double Weight { get; set; }
 
         #endregion
@@ -96,7 +96,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
         }
 
         // Constructor 3
-        public Person(int age, string fname, string lname, double height, double weight) :this(fname, lname, age) // Calling constructor 2
+        public Person(int age, string fname, string lname, int height, double weight) : this(fname, lname, age) // Calling constructor 2
         {
             Height = height;
             Weight = weight;
@@ -116,7 +116,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 
             if (Height > 0)
             {
-                message += $", Height: {Height.ToString("F2")} meters";
+                message += $", Height: {Height} cm";
             }
 
             if (Weight > 0)
@@ -127,32 +127,4 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
         }
         #endregion
     }
-
-
-
-
-    /* TODO: Skapa en klass Person och ge den följande privata attribut:
-    age, fName, lName, height, weight
-    Skapa publika properties med get och set som hämtar eller sätter tilldelad variabel.
-    Instansiera en person i program.cs , kommer du direkt åt variablerna?
-    Implementera validering i de skapade properties:
-    ● Age kan bara tilldelas ett värde större än 0.
-    ● FName är obligatorisk och får inte vara mindre än 2 tecken eller längre än
-    10 tecken.
-    ● LName är obligatorisk och får inte vara mindre än 3 tecken eller större än 15
-    tecken.
-    Kasta ett undantag av typen ArgumentException i varje property om dess
-    validering inte fullföljs, undantaget ska innehålla ett beskrivande
-    meddelande.
-    Se till att hantera undantagen i Program-klassen med en try-catch block.
-
-
-    I PersonHandler , skriv en metod som skapar en person med angivna värden:
-    public Person CreatePerson (int age , string fname ,
-    string lname , double height , double weight )
-
-
-    Fortsätt skapa metoder i PersonHandler för att kunna hantera samtliga
-    operationer som man kan vilja göra med en Person .
-     */
 }
