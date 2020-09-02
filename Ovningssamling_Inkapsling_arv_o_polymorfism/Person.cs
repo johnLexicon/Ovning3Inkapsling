@@ -11,7 +11,7 @@ namespace OvnSamlingInkapslArvOPolym
 {
     public class Person
     {
-        #region Properties
+        #region Properties ********************************************************************************
         private int age;
 
         public int Age
@@ -80,7 +80,7 @@ namespace OvnSamlingInkapslArvOPolym
 
         #endregion
 
-        #region Constructors /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        #region Constructors ********************************************************************************
 
         // Constructor 1
         public Person(string firstName, string lastName)
@@ -105,7 +105,7 @@ namespace OvnSamlingInkapslArvOPolym
 
 
 
-        #region methods ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        #region methods ********************************************************************************
         public override string ToString()
         {
             string message = $"First name: {FName}, Last name: {LName}";

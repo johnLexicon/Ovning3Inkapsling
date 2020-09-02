@@ -17,6 +17,5 @@ namespace OvnSamlingInkapslArvOPolym
         {
             return $"{base.Stats()}, Eye color: {EyeColour}";
         }
-
     }
 }
