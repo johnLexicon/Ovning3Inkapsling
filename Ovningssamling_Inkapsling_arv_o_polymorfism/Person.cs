@@ -26,8 +26,50 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
             }
         }
 
-        public string FName { get; set; }
-        public string LName { get; set; }
+        private string fName;
+        
+        /// <summary>
+        /// FName är obligatorisk och får inte vara mindre än 2 tecken eller längre än 10 tecken.
+        /// </summary>
+        public string FName 
+        {
+            get { return fName; }
+
+            set 
+            {
+                if (value.Length >= 2 && value.Length <= 10)
+                {
+                    fName = value;
+                }
+                else
+                {
+                    throw new System.ArgumentException("First name should contain between two and ten letters!");
+                }
+            }
+        }
+
+        private string lName;
+
+        /// <summary>
+        /// LName är obligatorisk och får inte vara mindre än 3 tecken eller större än 15 tecken.  
+        /// </summary>
+        public string LName
+        {
+            get { return lName; }
+            
+            set 
+            {
+                if ( value.Length >= 3 && value.Length <= 15 )
+                {
+                    lName = value; 
+                }
+                else
+                {
+                    throw new System.ArgumentException("First name should contain between 3 and 15 letters!");
+                }
+            }
+        }
+
         public double Height { get; set; }
         public double Weight { get; set; }
 
