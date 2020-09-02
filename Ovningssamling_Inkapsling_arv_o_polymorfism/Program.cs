@@ -26,13 +26,13 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
             */
 
             Person person2 = PersonHandler.CreatePerson(10, "Lisa", "Karlsson", 140, 35);
-            Console.WriteLine(person2.ToString()); // TODO ///////////////
+            Console.WriteLine(person2.ToString()); // TODO Testutskrift ///////////////
 
             PersonHandler.SetFirstName(person2, "Gittan");
             Console.WriteLine(person2.ToString()); // TODO Testutskrift ///////////////
 
             Person person3 = PersonHandler.CreatePerson(13, "Arne", "Olsson", 175, 81);
-            Console.WriteLine(person3.ToString()); // TODO ///////////////
+            Console.WriteLine(person3.ToString()); // TODO Testutskrift ///////////////
 
             PersonHandler.SetWeight(person3, 83);
             Console.WriteLine(person3.ToString()); // TODO Testutskrift ///////////////
