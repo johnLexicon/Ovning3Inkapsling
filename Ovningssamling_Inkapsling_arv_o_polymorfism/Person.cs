@@ -80,12 +80,31 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
         #endregion
 
         #region Constructors
-        public Person()
-        {
 
+        // Constructor 1
+        public Person(string firstName, string lastName)
+        {
+            FName = firstName;
+            LName = lastName;
+        }
+
+        // Constructor 2
+        public Person(string firstName, string lastName, int age) : this(firstName, lastName) // Calling constructor 1
+        {
+            Age = age;
         }
         #endregion
+
+        
+
+
+        public override string ToString()
+        {
+            return $"First name: {FName}, Last name: {LName}, Age: {Age}";
+        }
     }
+
+   
 
 
     /* TODO: Skapa en klass Person och ge den följande privata attribut:

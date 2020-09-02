@@ -10,7 +10,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 
             try
             {
-                person = new Person();
+                person = new Person("Stefan", "Elmgren", 53);
                 Console.WriteLine(person.ToString()); // TODO ///////////////
             }
             catch (Exception)
@@ -18,8 +18,8 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
                 
             }
 
-            PersonHandler personhandler = new PersonHandler();
-            personhandler.SetAge(person, 10);
+            //PersonHandler personhandler = new PersonHandler();/////////////////
+            //personhandler.SetAge(person, 10);///////////////////////
             
         }
     }

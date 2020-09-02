@@ -14,7 +14,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfismTests
         {
             // Arrange
             string firstName = "Stefan";
-            Person person = new Person();
+            Person person = new Person(firstName, "Elmgren");
             var expected = "Stefan";
 
             // Act
@@ -31,7 +31,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfismTests
         {
             // Arrange
             string firstName = "S";
-            Person person = new Person();
+            Person person = new Person(firstName, "Elmgren");
             Exception exception = null;
             string expected = "First name should contain between two and ten letters!";
             string expected2 = null;
