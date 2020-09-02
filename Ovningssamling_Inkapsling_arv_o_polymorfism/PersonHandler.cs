@@ -4,16 +4,11 @@ using System.Text;
 
 namespace OvningssamlingInkapslingArvOchPolymorfism
 {
-    class PersonHandler
+    public static class PersonHandler
     {
-        public PersonHandler(Person person, int age)
+        public static void SetAge(Person pers, int age) 
         {
-            this.SetAge(person, age);
-        }
-
-        public void SetAge(Person pers, int age) 
-        {
-
+            pers.Age = age;
         }
     }
 

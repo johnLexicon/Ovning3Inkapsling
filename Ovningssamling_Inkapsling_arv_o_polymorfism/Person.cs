@@ -103,7 +103,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
             string message = $"First name: {FName}, Last name: {LName}";
             if (Age > 0)
             {
-                message += ", Age: {Age}";
+                message += $", Age: {Age}";
             }
             return message;
         }
