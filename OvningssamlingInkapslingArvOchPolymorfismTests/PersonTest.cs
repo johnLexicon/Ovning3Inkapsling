@@ -34,6 +34,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfismTests
             Person person = new Person();
             Exception exception = null;
             string expected = "First name should contain between two and ten letters!";
+            string expected2 = null;
 
             // Act
             try
@@ -46,9 +47,11 @@ namespace OvningssamlingInkapslingArvOchPolymorfismTests
             }
 
             string actual = exception.Message;
+            string actual2 = null;
 
             // Assert
             Assert.AreEqual(expected, actual);
+            Assert.AreEqual(expected2, actual2");
         }
     }
 }

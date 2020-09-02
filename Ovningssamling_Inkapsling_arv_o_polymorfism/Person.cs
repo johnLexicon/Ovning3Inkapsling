@@ -22,7 +22,11 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
                 if (value > 0)
                 {
                     age = value;
-                }   
+                }
+                else
+                {
+                    throw new System.ArgumentException("Age must be higher than zero");
+                }
             }
         }
 
