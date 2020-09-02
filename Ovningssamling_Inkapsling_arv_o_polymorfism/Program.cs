@@ -23,6 +23,9 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 
             Person person2 = PersonHandler.CreatePerson(10, "Lisa", "Karlsson", 1.40, 35);
             Console.WriteLine(person2.ToString()); // TODO ///////////////
+
+            PersonHandler.SetFirstName(person2, "Gittan");
+            Console.WriteLine(person2.ToString()); // TODO Testutskrift ///////////////
         }
     }
 }
