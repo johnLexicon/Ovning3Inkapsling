@@ -39,11 +39,20 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
                 Weight = 25
             });
 
+            animals.Add(new Dog()
+            {
+                Iq = 34,
+                Age = 9,
+                Name = "Plupp",
+                Weight = 19
+            });
+
             animals.Add(new Horse()
             {
                 Age = 4,
                 Name = "Legolas",
                 Weight = 125,
+                maneColour = "Brown"
             });
 
             animals.Add(new Wolfman()
@@ -51,11 +60,12 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
                 Age = 35,
                 Name = "Ulrik",
                 Weight = 75,
+                EyeColour = "Blue"
             });
 
             foreach (var animal in animals)
             {
-                Console.WriteLine($"{animal}");
+                Console.WriteLine($"{animal.GetType()}");
                 Console.WriteLine($"Namn: {animal.Name}, Weight: {animal.Weight}, Age: {animal.Age}");
                 animal.DoSound();
 
@@ -66,11 +76,24 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
                 }
             }
 
+            Console.WriteLine();
             Console.WriteLine("Animal stats");
 
             foreach (var animal in animals)
             {
                 Console.WriteLine(animal.Stats());
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Dog stats");
+
+            foreach (var animal in animals)
+            {
+                if (animal.GetType() == typeof(Dog))
+                {
+                    Console.WriteLine(animal.Stats());
+                }
+                
             }
 
             List<Dog> dogs = new List<Dog>();
@@ -98,11 +121,6 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
                 Weight = 29,
                 Iq = 35
             });
-
-            foreach (var animal in animals)
-            {
-
-            }
 
             /*
             Person person = null;
