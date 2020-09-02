@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Channels;
 
 // TODO add comments
 /// <summary>
@@ -115,7 +116,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
 
             if (Height > 0)
             {
-                message += $", Height: {Height} cm";
+                message += $", Height: {Height.ToString("F2")} meters";
             }
 
             if (Weight > 0)
