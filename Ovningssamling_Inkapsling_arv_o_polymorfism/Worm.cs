@@ -12,5 +12,10 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
         {
             Console.WriteLine("Ssssss");
         }
+
+        public override string Stats()
+        {
+            return sPoisonous.ToString();
+        }
     }
 }

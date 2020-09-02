@@ -12,5 +12,10 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
         {
             Console.WriteLine("Squeak");
         }
+
+        public override string Stats()
+        {
+            return NrOfSpikes.ToString();
+        }
     }
 }

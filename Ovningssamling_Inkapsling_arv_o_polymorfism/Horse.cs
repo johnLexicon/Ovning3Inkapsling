@@ -12,5 +12,10 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
         {
             Console.WriteLine("Neigh");
         }
+
+        public override string Stats()
+        {
+            return maneColour;
+        }
     }
 }

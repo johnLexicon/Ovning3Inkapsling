@@ -7,5 +7,10 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
     class Pelican : Bird
     {
         public int beakVolume { get; set; }
+
+        public override string Stats()
+        {
+            return beakVolume.ToString();
+        }
     }
 }

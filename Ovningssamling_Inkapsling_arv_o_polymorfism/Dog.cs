@@ -12,5 +12,10 @@ namespace OvningssamlingInkapslingArvOchPolymorfism
         {
             Console.WriteLine("Woof");
         }
+
+        public override string Stats()
+        {
+            return Iq.ToString();
+        }
     }
 }
