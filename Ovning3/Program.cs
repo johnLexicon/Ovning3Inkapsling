@@ -12,9 +12,7 @@ namespace OvnSamlingInkapslArvOPolym
         {
             // TestingPerson();
             TestingAnimal();
-
-            List<UserError> userErrors = CreateUserArrowList();
-            printUserErrorUeMessage(userErrors);
+            printUserErrorUeMessage(CreateUserArrowList());
         }
 
         #region methods //////////////////////////////////////////////////////////////////////////////////
