@@ -13,3 +13,9 @@ Svar: Animal
 
 13. F: Förklara vad det är som händer.
 Svar: ? //TODO
+
+16. Kommer du åt den metoden från Animals listan?
+Svar: Nej
+
+17. F: Varför inte?
+Svar: För att den metoden inte finns i Animal eller någon klass som Animal ärver
