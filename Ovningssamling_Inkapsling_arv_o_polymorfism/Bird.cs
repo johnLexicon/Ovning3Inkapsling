@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OvnSamlingInkapslArvOPolym
 {
-    class Bird : Animal
+    public class Bird : Animal
     {
         public int WingSpan { get; set; }
 

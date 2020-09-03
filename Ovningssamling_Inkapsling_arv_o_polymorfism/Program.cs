@@ -74,6 +74,12 @@ namespace OvnSamlingInkapslArvOPolym
                     person.Talk();
                 }
 
+                if (animal is Dog)
+                {
+                    Dog dog = (Dog)animal; // Cast Animal to Dog
+                    Console.Write($", ReturnString:  {dog.returnString()}");
+                }
+
                 Console.WriteLine();
             }
 

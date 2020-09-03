@@ -18,7 +18,7 @@ namespace OvnSamlingInkapslArvOPolym
             return $"{base.Stats()}, IQ: {Iq.ToString()}";
         }
 
-        public string retString()
+        public string returnString()
         {
             return "Detta är lite text";
         }
