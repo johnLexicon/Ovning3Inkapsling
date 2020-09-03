@@ -43,6 +43,24 @@ namespace OvnSamlingInkapslArvOPolym.Tests
         }
 
         [TestMethod()]
+        public void StatsTestFail()
+        {
+            // Arrange
+            Dog dog = new Dog();
+            dog.Name = "Kurt";
+            dog.Weight = 200;
+            dog.Age = 10;
+            dog.Iq = 15;
+            string expected = "Name: Kurt, Age: 10, Weight: 20, IQ: 15";
+
+            // Act
+            string actual = dog.Stats();
+
+            // Assert
+            Assert.AreNotEqual(expected, actual);
+        }
+
+        [TestMethod()]
         public void returnStringTest()
         {
             // Arrange
