@@ -38,7 +38,7 @@ namespace OvningssamlingInkapslingArvOchPolymorfismTests
             // Act
             try
             {
-                person.FName = firstName; //This should throw exeption
+                person.FName = firstName; //This should throw an exception
             }
             catch (Exception ex)
             {
