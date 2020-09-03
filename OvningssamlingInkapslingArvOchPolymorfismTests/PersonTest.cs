@@ -27,14 +27,13 @@ namespace OvningssamlingInkapslingArvOchPolymorfismTests
 
         
         [TestMethod]
+        [ExpectedException(typeof(System.ArgumentException))]
         public void TestFirstNameTooShortThrowsArgumentException()
         {
             // Arrange
             string firstName = "S";
             Person person = new Person(firstName, "Elmgren");
             Exception exception = null;
-            string expected = "First name should contain between two and ten letters!";
-            string expected2 = null;
 
             // Act
             try
@@ -45,13 +44,6 @@ namespace OvningssamlingInkapslingArvOchPolymorfismTests
             {
                 exception = ex;
             }
-
-            string actual = exception.Message;
-            string actual2 = null;
-
-            // Assert
-            Assert.AreEqual(expected, actual);
-            Assert.AreEqual(expected2, actual2);
         }
     }
 }
