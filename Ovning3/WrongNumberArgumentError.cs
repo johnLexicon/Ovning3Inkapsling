@@ -5,11 +5,11 @@ using System.Text;
 
 namespace Ovning3
 {
-    public class NumericInputError : UserError
+    class WrongNumberArgumentError : UserError
     {
         public override string UEMessage()
         {
-            return "You tried to use a numeric input in a text only field. This fired an error!";
+            return "2 arguments needed, only 1 was provided. This fired an error!";
         }
     }
 }

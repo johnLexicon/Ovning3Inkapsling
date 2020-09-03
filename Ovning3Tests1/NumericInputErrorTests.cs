@@ -14,7 +14,7 @@ namespace Ovning3.Tests
         {
             // Arrange
             NumericInputError numericInputError = new NumericInputError();
-            string expected = "You tried to use a numeric input in a text only field.This fired an error!";
+            string expected = "You tried to use a numeric input in a text only field. This fired an error!";
 
             // Act
             string actual = numericInputError.UEMessage();           

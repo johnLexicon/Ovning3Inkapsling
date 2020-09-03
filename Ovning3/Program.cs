@@ -34,6 +34,12 @@ namespace OvnSamlingInkapslArvOPolym
             userErrors.Add(textInputError);
             NumericInputError numericInputError = new NumericInputError();
             userErrors.Add(numericInputError);
+            DivisionByZeroerror divisionByZeroError = new DivisionByZeroerror();
+            userErrors.Add(divisionByZeroError);
+            ArrayInputError arrayInputError = new ArrayInputError();
+            userErrors.Add(arrayInputError);
+            WrongNumberArgumentError wrongNumberArgumentError = new WrongNumberArgumentError();
+            userErrors.Add(wrongNumberArgumentError);
 
             return userErrors;
         }
