@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Ovningssamling_Inkapsling_arv_o_polymorfism\OvnSamlingInkapslArvOPolym.csproj" />
+    <ProjectReference Include="..\Ovningssamling_Inkapsling_arv_o_polymorfism\Ovning3.csproj" />
   </ItemGroup>
 
 </Project>
