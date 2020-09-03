@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Ovning3
 {
-    class NumericInputError : UserError
+    public class NumericInputError : UserError
     {
         public override string UEMessage()
         {

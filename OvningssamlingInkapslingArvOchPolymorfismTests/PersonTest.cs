@@ -44,6 +44,8 @@ namespace OvningssamlingInkapslingArvOchPolymorfismTests
             {
                 exception = ex;
             }
+
+            // Assert - Expects exception
         }
     }
 }

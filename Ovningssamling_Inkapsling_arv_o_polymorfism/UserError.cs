@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OvnSamlingInkapslArvOPolym
 {
-    abstract class UserError
+    public abstract class UserError
     {
         public abstract string UEMessage();
     }
