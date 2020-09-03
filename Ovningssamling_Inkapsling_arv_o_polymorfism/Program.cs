@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ovning3;
+using System;
 using System.Collections.Generic;
 using System.Net.Cache;
 
@@ -10,6 +11,16 @@ namespace OvnSamlingInkapslArvOPolym
         {
             // TestingPerson();
             TestingAnimal();
+            CreatingUserArrowList();
+        }
+
+        private static void CreatingUserArrowList()
+        {
+            List<UserError> userErrors = new List<UserError>();
+            TextInputError textInputError = new TextInputError();
+            userErrors.Add(textInputError);
+            NumericInputError numericInputError = new NumericInputError();
+            userErrors.Add(numericInputError);
         }
 
         #region methods //////////////////////////////////////////////////////////////////////////////////
