@@ -48,7 +48,7 @@ namespace OvnSamlingInkapslArvOPolym.Tests
             // Arrange
             Dog dog = new Dog();
             dog.Name = "Kurt";
-            dog.Weight = 200;
+            dog.Weight = 200; // Wrong
             dog.Age = 10;
             dog.Iq = 15;
             string expected = "Name: Kurt, Age: 10, Weight: 20, IQ: 15";
