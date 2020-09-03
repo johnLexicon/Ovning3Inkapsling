@@ -50,43 +50,43 @@ namespace OvnSamlingInkapslArvOPolym
 
             animals.Add(new Pelican() 
             {
-                beakVolume = 10,
-                Age = 2,
-                Name = "Kurt",
-                Weight = 20,
-                WingSpan = 5
+                beakVolume  = 10,
+                Age         = 2,
+                Name        = "Kurt",
+                Weight      = 20,
+                WingSpan    = 5
             });
 
             animals.Add(new Dog()
             {
-                Iq = 24,
-                Age = 5,
-                Name = "Pluffsan",
-                Weight = 25
+                Iq      = 24,
+                Age     = 5,
+                Name    = "Pluffsan",
+                Weight  = 25
             });
 
             animals.Add(new Dog()
             {
-                Iq = 34,
-                Age = 9,
-                Name = "Plupp",
-                Weight = 19
+                Iq      = 34,
+                Age     = 9,
+                Name    = "Plupp",
+                Weight  = 19
             });
 
             animals.Add(new Horse()
             {
-                Age = 4,
-                Name = "Legolas",
-                Weight = 125,
-                maneColour = "Brown"
+                Age         = 4,
+                Name        = "Legolas",
+                Weight      = 125,
+                maneColour  = "Brown"
             });
 
             animals.Add(new Wolfman()
             {
-                Age = 35,
-                Name = "Ulrik",
-                Weight = 75,
-                EyeColour = "Blue"
+                Age         = 35,
+                Name        = "Ulrik",
+                Weight      = 75,
+                EyeColour   = "Blue"
             });
 
             Console.WriteLine("Animals:");
@@ -139,26 +139,26 @@ namespace OvnSamlingInkapslArvOPolym
 
             dogs.Add(new Dog()
             {
-                Age = 11,
-                Name = "Larsa",
-                Weight = 18,
-                Iq = 28
+                Age     = 11,
+                Name    = "Larsa",
+                Weight  = 18,
+                Iq      = 28
             });
 
             dogs.Add(new Dog()
             {
-                Age = 12,
-                Name = "Fido",
-                Weight = 19,
-                Iq = 30
+                Age     = 12,
+                Name    = "Fido",
+                Weight  = 19,
+                Iq      = 30
             });
 
             dogs.Add(new Dog()
             {
-                Age = 4,
-                Name = "Lissen",
-                Weight = 29,
-                Iq = 35
+                Age     = 4,
+                Name    = "Lissen",
+                Weight  = 29,
+                Iq      = 35
             });
         }
 
