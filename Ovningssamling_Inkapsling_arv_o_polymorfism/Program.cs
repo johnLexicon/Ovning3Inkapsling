@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Net.Cache;
+using System.Runtime.CompilerServices;
 
 namespace OvnSamlingInkapslArvOPolym
 {
@@ -11,19 +12,34 @@ namespace OvnSamlingInkapslArvOPolym
         {
             // TestingPerson();
             TestingAnimal();
-            CreatingUserArrowList();
+
+            List<UserError> userErrors = CreateUserArrowList();
+            printUserErrorUeMessage(userErrors);
         }
 
-        private static void CreatingUserArrowList()
+        #region methods //////////////////////////////////////////////////////////////////////////////////
+        private static void printUserErrorUeMessage(List<UserError> userErrors)
+        {
+            Console.WriteLine();
+            Console.WriteLine("UEMessage(s)");
+
+            foreach (UserError userError in userErrors)
+            {
+                Console.WriteLine(userError.UEMessage());
+            }
+        }
+
+        private static List<UserError> CreateUserArrowList()
         {
             List<UserError> userErrors = new List<UserError>();
             TextInputError textInputError = new TextInputError();
             userErrors.Add(textInputError);
             NumericInputError numericInputError = new NumericInputError();
             userErrors.Add(numericInputError);
+
+            return userErrors;
         }
 
-        #region methods //////////////////////////////////////////////////////////////////////////////////
         private static void TestingAnimal()
         {
             List<Animal> animals = new List<Animal>();
