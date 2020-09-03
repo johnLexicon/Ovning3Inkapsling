@@ -58,6 +58,8 @@ namespace OvnSamlingInkapslArvOPolym
                 EyeColour = "Blue"
             });
 
+            Console.WriteLine("Animals:");
+
             foreach (var animal in animals)
             {
                 // Get the objectname without the "OvningssamlingInkapslingArvOchPolymorfism" before the dot
