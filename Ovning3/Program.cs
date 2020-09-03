@@ -15,7 +15,7 @@ namespace OvnSamlingInkapslArvOPolym
             printUserErrorUeMessage(CreateUserErrorList());
         }
 
-        #region methods //////////////////////////////////////////////////////////////////////////////////
+        #region methods *******************************************************************
         private static void printUserErrorUeMessage(List<UserError> userErrors)
         {
             Console.WriteLine();
