@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OvnSamlingInkapslArvOPolym
 {
-    class Dog : Animal
+    public class Dog : Animal
     {
         public int Iq { get; set; }
 
