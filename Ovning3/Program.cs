@@ -8,6 +8,8 @@ namespace OvnSamlingInkapslArvOPolym
 {
     class Program
     {
+        private static IUI ui = new ConsoleUI();
+
         static void Main(string[] args)
         {
             // TestingPerson();
@@ -18,8 +20,10 @@ namespace OvnSamlingInkapslArvOPolym
         #region methods *******************************************************************
         private static void PrintUserErrorUeMessage(List<UserError> userErrors)
         {
-            Console.WriteLine();
-            Console.WriteLine("UEMessage(s)");
+            //Console.WriteLine();
+            ui.PrintLine();
+            ui.PrintLine("UEMessage(s)");
+            //Console.WriteLine("UEMessage(s)");
 
             foreach (UserError userError in userErrors)
             {
