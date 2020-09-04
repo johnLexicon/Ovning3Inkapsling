@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Ovning3
 {
+    /// <summary>
+    /// Prints and reads to/from Console
+    /// </summary>
     public class ConsoleUI : IUI
     {
         /// <summary>
