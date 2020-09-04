@@ -27,7 +27,8 @@ namespace OvnSamlingInkapslArvOPolym
 
             foreach (UserError userError in userErrors)
             {
-                Console.WriteLine(userError.UEMessage());
+                //Console.WriteLine(userError.UEMessage());
+                ui.PrintLine(userError.UEMessage());             
             }
         }
 
@@ -93,49 +94,51 @@ namespace OvnSamlingInkapslArvOPolym
                 EyeColour   = "Blue"
             });
 
-            Console.WriteLine("Animals:");
+            //Console.WriteLine("Animals:");
+            ui.PrintLine("Animals:");
 
             foreach (var animal in animals)
             {
                 // Get the objectname without the "OvningssamlingInkapslingArvOchPolymorfism" before the dot
                 string[] objectName = animal.GetType().ToString().Split('.');
-                Console.Write($"Type {objectName[1]}, ");
-                Console.Write($"Namn: {animal.Name}, Weight: {animal.Weight}, Age: {animal.Age}, ");
-                Console.Write("Sound: ");
+                ui.Print($"Type {objectName[1]}, ");
+                ui.Print($"Namn: {animal.Name}, Weight: {animal.Weight}, Age: {animal.Age}, ");
+                ui.Print("Sound: ");
                 animal.DoSound();
 
                 if (animal is IPerson)
                 {
                     IPerson person = (IPerson)animal; // Cast Animal to IPerson
-                    Console.Write(", Sound 2: ");
+                    ui.Print(", Sound 2: ");
                     person.Talk();
                 }
 
                 if (animal is Dog)
                 {
                     Dog dog = (Dog)animal; // Cast Animal to Dog
-                    Console.Write($", ReturnString:  {dog.returnString()}");
+                    ui.Print($", ReturnString:  {dog.returnString()}");
                 }
 
-                Console.WriteLine();
+                ui.PrintLine();
             }
 
-            Console.WriteLine();
-            Console.WriteLine("Animal stats");
+            ui.PrintLine();
+            ui.PrintLine("Animal stats");
 
             foreach (var animal in animals)
             {
-                Console.WriteLine(animal.Stats());
+                ui.PrintLine(animal.Stats());
             }
 
-            Console.WriteLine();
-            Console.WriteLine("Dog stats");
+            ui.PrintLine();
+            ui.PrintLine("Dog stats");
 
             foreach (var animal in animals)
             {
                 if (animal.GetType() == typeof(Dog))
                 {
-                    Console.WriteLine(animal.Stats());
+                    //Console.WriteLine(animal.Stats());
+                    ui.PrintLine(animal.Stats());
                 }
             }
 
