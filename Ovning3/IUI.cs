@@ -3,7 +3,7 @@
     interface IUI
     {
         /// <summary>
-        /// Read input
+        /// Reads input
         /// </summary>
         /// <returns>input</returns>
         string GetInput();
