@@ -134,7 +134,7 @@ namespace Ovning3
 
             foreach (var animal in animals)
             {
-                // Get the objectname without the "OvningssamlingInkapslingArvOchPolymorfism" before the dot
+                // Get the objectname without the "Ovning3" before the dot
                 string[] objectName = animal.GetType().ToString().Split('.');
                 Ui.Print($"Type {objectName[1]}, ");
                 
