@@ -6,12 +6,11 @@ namespace Ovning3
 {
     public class Bird : Animal
     {
-        private static IUI ui = new ConsoleUI();
         public int WingSpan { get; set; }
 
         public override void DoSound()
         {
-            ui.Print("Tweet");
+            Ui.Print("Tweet");
         }
 
         public override string Stats()
