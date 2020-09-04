@@ -37,10 +37,6 @@ Svar: Ett interface kan bara innehålla deklarationer men en abstrakt klass kan 
 using System;
 using System.Collections.Generic;
 
-
-using System.Net.Cache;
-using System.Runtime.CompilerServices;
-
 namespace Ovning3
 {
     class Program
@@ -48,10 +44,6 @@ namespace Ovning3
         private static UI ui = new UI();
 
         internal static UI Ui { get => ui; set => ui = value; }
-
-        //private static IUI ui = new ConsoleUI();
-
-        //internal static IUI Ui { get => ui; set => ui = value; }
 
         static void Main(string[] args)
         {
