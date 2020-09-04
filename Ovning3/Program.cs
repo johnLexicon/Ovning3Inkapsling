@@ -10,6 +10,8 @@ namespace Ovning3
     {
         private static IUI ui = new ConsoleUI();
 
+        internal static IUI Ui { get => ui; set => ui = value; }
+
         static void Main(string[] args)
         {
             // TestingPerson();
@@ -20,12 +22,12 @@ namespace Ovning3
         #region methods *******************************************************************
         private static void PrintUserErrorUeMessage(List<UserError> userErrors)
         {
-            ui.PrintLine();
-            ui.PrintLine("UEMessage(s)");
+            Ui.PrintLine();
+            Ui.PrintLine("UEMessage(s)");
             
             foreach (UserError userError in userErrors)
             {
-                ui.PrintLine(userError.UEMessage());             
+                Ui.PrintLine(userError.UEMessage());             
             }
         }
 
@@ -91,49 +93,49 @@ namespace Ovning3
                 EyeColour   = "Blue"
             });
 
-            ui.PrintLine("Animals:");
+            Ui.PrintLine("Animals:");
 
             foreach (var animal in animals)
             {
                 // Get the objectname without the "OvningssamlingInkapslingArvOchPolymorfism" before the dot
                 string[] objectName = animal.GetType().ToString().Split('.');
-                ui.Print($"Type {objectName[1]}, ");
-                ui.Print($"Namn: {animal.Name}, Weight: {animal.Weight}, Age: {animal.Age}, ");
-                ui.Print("Sound: ");
+                Ui.Print($"Type {objectName[1]}, ");
+                Ui.Print($"Namn: {animal.Name}, Weight: {animal.Weight}, Age: {animal.Age}, ");
+                Ui.Print("Sound: ");
                 animal.DoSound();
 
                 if (animal is IPerson)
                 {
                     IPerson person = (IPerson)animal; // Cast Animal to IPerson
-                    ui.Print(", Sound 2: ");
+                    Ui.Print(", Sound 2: ");
                     person.Talk();
                 }
 
                 if (animal is Dog)
                 {
                     Dog dog = (Dog)animal; // Cast Animal to Dog
-                    ui.Print($", ReturnString:  {dog.returnString()}");
+                    Ui.Print($", ReturnString:  {dog.returnString()}");
                 }
 
-                ui.PrintLine();
+                Ui.PrintLine();
             }
 
-            ui.PrintLine();
-            ui.PrintLine("Animal stats");
+            Ui.PrintLine();
+            Ui.PrintLine("Animal stats");
 
             foreach (var animal in animals)
             {
-                ui.PrintLine(animal.Stats());
+                Ui.PrintLine(animal.Stats());
             }
 
-            ui.PrintLine();
-            ui.PrintLine("Dog stats");
+            Ui.PrintLine();
+            Ui.PrintLine("Dog stats");
 
             foreach (var animal in animals)
             {
                 if (animal.GetType() == typeof(Dog))
                 {
-                    ui.PrintLine(animal.Stats());
+                    Ui.PrintLine(animal.Stats());
                 }
             }
 
