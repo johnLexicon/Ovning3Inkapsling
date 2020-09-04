@@ -138,7 +138,7 @@ namespace Ovning3
                 string[] objectName = animal.GetType().ToString().Split('.');
                 Ui.Print($"Type {objectName[1]}, ");
                 
-                Ui.Print($"Namn: {animal.Name}, Weight: {animal.Weight}, Age: {animal.Age}, ");
+                Ui.Print($"Name: {animal.Name}, Weight: {animal.Weight}, Age: {animal.Age}, ");
                 Ui.Print("Sound: ");
                 animal.DoSound();
 
