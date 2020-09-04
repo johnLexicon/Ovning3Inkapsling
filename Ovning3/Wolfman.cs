@@ -8,7 +8,7 @@ namespace Ovning3
     {
         public void Talk() 
         {
-            Console.Write("Öööööh");
+            Ui.Print("Öööööh");
         }
     }
 }

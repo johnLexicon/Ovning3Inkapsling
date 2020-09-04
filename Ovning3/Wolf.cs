@@ -10,7 +10,7 @@ namespace Ovning3
         
         public override void DoSound()
         {
-            Console.Write("Howl");
+            Ui.Print("Howl");
         }
 
         public override string Stats()
