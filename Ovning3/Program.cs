@@ -23,6 +23,9 @@ Svar: Nej
 
 17. F: Varför inte?
 Svar: För att den metoden inte finns i Animal eller någon klass som Animal ärver
+
+11. F: Varför är polymorfism viktigt att behärska?
+Svar: Method Overloading gör så att man inte behöver repetera kod. 
  */
 
 using System.Net.Cache;
