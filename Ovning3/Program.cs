@@ -54,6 +54,11 @@ namespace Ovning3
         }
 
         #region methods ***********************************************************************
+
+        /// <summary>
+        /// Printing User error messages
+        /// </summary>
+        /// <param name="userErrors"></param>
         private static void PrintUserErrorUeMessage(List<UserError> userErrors)
         {
             Ui.PrintLine();
@@ -65,7 +70,10 @@ namespace Ovning3
             }
         }
 
-
+        /// <summary>
+        /// Creating User error list
+        /// </summary>
+        /// <returns>userErrors</returns>
         private static List<UserError> CreateUserErrorList() 
         {
             List<UserError> userErrors = new List<UserError>();
@@ -213,10 +221,9 @@ namespace Ovning3
             /*
             dogs.Add(new horse()
             {
-                Age = 4,
-                Name = "Lissen",
-                Weight = 29,
-                Iq = 35
+                Age = 15,
+                Name = "Blacken",
+                Weight = 100
             });
             */
         }
