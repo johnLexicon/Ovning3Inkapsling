@@ -68,6 +68,7 @@ namespace Ovning3
         private static List<UserError> CreateUserErrorList()
         {
             List<UserError> userErrors = new List<UserError>();
+
             TextInputError textInputError = new TextInputError();
             userErrors.Add(textInputError);
             NumericInputError numericInputError = new NumericInputError();
