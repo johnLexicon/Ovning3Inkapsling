@@ -18,6 +18,6 @@
         /// Prints string ending with line break
         /// </summary>
         /// <param name="message">string to print</param>
-        void PrintLine(string message = "");
+        void PrintLine(string message);
     }
 }

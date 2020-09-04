@@ -45,23 +45,27 @@ namespace Ovning3
 {
     class Program
     {
-        private static IUI ui = new ConsoleUI();
+        private static UI ui = new UI();
 
-        internal static IUI Ui { get => ui; set => ui = value; }
+        internal static UI Ui { get => ui; set => ui = value; }
+
+        //private static IUI ui = new ConsoleUI();
+
+        //internal static IUI Ui { get => ui; set => ui = value; }
 
         static void Main(string[] args)
         {
             // TestingPerson();
             TestingAnimal();
             PrintUserErrorUeMessage(CreateUserErrorList());
-            ui.GetInput();
+            Ui.GetInput();
         }
 
         #region methods ***********************************************************************
         private static void PrintUserErrorUeMessage(List<UserError> userErrors)
         {
             Ui.PrintLine();
-            Ui.PrintLine("UEMessage(s)");
+            Ui.PrintLine("UEMessage(s):");
             
             foreach (UserError userError in userErrors)
             {
@@ -160,7 +164,7 @@ namespace Ovning3
             }
 
             Ui.PrintLine();
-            Ui.PrintLine("Animal stats");
+            Ui.PrintLine("Animal stats:");
 
             foreach (var animal in animals)
             {
@@ -168,7 +172,7 @@ namespace Ovning3
             }
 
             Ui.PrintLine();
-            Ui.PrintLine("Dog stats");
+            Ui.PrintLine("Dog stats:");
 
             foreach (var animal in animals)
             {
