@@ -65,7 +65,8 @@ namespace Ovning3
             }
         }
 
-        private static List<UserError> CreateUserErrorList()
+
+        private static List<UserError> CreateUserErrorList() // TODO bryta ut
         {
             List<UserError> userErrors = new List<UserError>();
 
@@ -82,6 +83,7 @@ namespace Ovning3
 
             return userErrors;
         }
+
 
         private static void TestingAnimal()
         {
