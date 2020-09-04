@@ -25,7 +25,14 @@ Svar: Nej
 Svar: För att den metoden inte finns i Animal eller någon klass som Animal ärver
 
 11. F: Varför är polymorfism viktigt att behärska?
+Svar:  
+
+12. F: Hur kan polymorfism förändra och förbättra kod via en bra struktur?
 Svar: Method Overloading gör så att man inte behöver repetera kod. 
+
+13. F: Vad är det för en skillnad på en Abstrakt klass och ett Interface?
+Svar: Ett interface kan bara innehålla deklarationer men en abstrakt klass kan innehålla medlemmar och konstruktorer. 
+      En klass kan ärva från flera interfaces men bara från en klass.
  */
 
 using System.Net.Cache;
