@@ -21,7 +21,7 @@ namespace Ovning3.Tests
 
             // Act
             int actualAge       = bird.Age;
-            string actualName      = bird.Name;
+            string actualName   = bird.Name;
             int actualWeight    = bird.Weight;
             int actualWingSpan  = bird.WingSpan;
 
