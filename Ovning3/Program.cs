@@ -207,6 +207,7 @@ namespace Ovning3
                 Iq      = 35
             });
 
+
             // Försök att lägga till en häst i listan av hundar
 
             /*
