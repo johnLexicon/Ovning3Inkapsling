@@ -5,7 +5,7 @@ using System.Text;
 namespace Ovning3
 {
     /// <summary>
-    /// Prints and reads to/from Console
+    /// Prints to and reads from Console
     /// </summary>
     public class ConsoleUI : IUI
     {
