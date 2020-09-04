@@ -13,7 +13,7 @@ namespace OvnSamlingInkapslArvOPolym
             // TestingPerson();
             TestingAnimal();
             PrintUserErrorUeMessage(CreateUserErrorList());
-        }
+    }
 
         #region methods *******************************************************************
         private static void PrintUserErrorUeMessage(List<UserError> userErrors)
