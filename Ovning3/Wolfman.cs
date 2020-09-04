@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using System.Text;
+﻿using System.Runtime.CompilerServices;
 
 [assembly: InternalsVisibleTo("Ovning3.Ovning3Tests1")]
 namespace Ovning3

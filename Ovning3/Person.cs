@@ -109,6 +109,7 @@ namespace Ovning3
         public override string ToString()
         {
             string message = $"First name: {FName}, Last name: {LName}";
+
             if (Age > 0)
             {
                 message += $", Age: {Age}";

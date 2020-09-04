@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Ovning3
+﻿namespace Ovning3
 {
     public class DivisionByZeroerror : UserError
     {
@@ -11,6 +7,4 @@ namespace Ovning3
             return "You tried to divide by zero. This fired an error!";
         }
     }
-
-    
 }

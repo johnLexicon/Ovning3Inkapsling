@@ -1,8 +1,4 @@
-﻿using Ovning3;
-using System;
-using System.Collections.Generic;
-
-#region questionsAnswers *****************************************************************************
+﻿#region questionsAnswers *****************************************************************************
 /*
  13. F: Om vi under utvecklingen kommer fram till att samtliga fåglar behöver ett nytt attribut, i
 vilken klass bör vi lägga det?
@@ -38,6 +34,10 @@ Svar: Ett interface kan bara innehålla deklarationer men en abstrakt klass kan 
  */
 #endregion
 
+using System;
+using System.Collections.Generic;
+
+
 using System.Net.Cache;
 using System.Runtime.CompilerServices;
 
@@ -54,7 +54,7 @@ namespace Ovning3
             // TestingPerson();
             TestingAnimal();
             PrintUserErrorUeMessage(CreateUserErrorList());
-    }
+        }
 
         #region methods ***********************************************************************
         private static void PrintUserErrorUeMessage(List<UserError> userErrors)
@@ -91,7 +91,7 @@ namespace Ovning3
 
             animals.Add(new Pelican() 
             {
-                beakVolume  = 10,
+                beakVolume  = 10, 
                 Age         = 2,
                 Name        = "Kurt",
                 Weight      = 20,
@@ -137,6 +137,7 @@ namespace Ovning3
                 // Get the objectname without the "OvningssamlingInkapslingArvOchPolymorfism" before the dot
                 string[] objectName = animal.GetType().ToString().Split('.');
                 Ui.Print($"Type {objectName[1]}, ");
+                
                 Ui.Print($"Namn: {animal.Name}, Weight: {animal.Weight}, Age: {animal.Age}, ");
                 Ui.Print("Sound: ");
                 animal.DoSound();

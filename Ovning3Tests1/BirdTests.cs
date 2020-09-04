@@ -1,8 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Ovning3;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Ovning3.Tests
 {

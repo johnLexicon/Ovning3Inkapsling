@@ -1,7 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Ovning3
 {
@@ -69,10 +66,8 @@ namespace Ovning3
             // Act
             string actual = dog.returnString();
 
-
             // Assert
             Assert.AreEqual(expected, actual);
-        }
-        
+        }  
     }
 }
