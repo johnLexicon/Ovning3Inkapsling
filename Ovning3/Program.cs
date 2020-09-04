@@ -54,6 +54,7 @@ namespace Ovning3
             // TestingPerson();
             TestingAnimal();
             PrintUserErrorUeMessage(CreateUserErrorList());
+            ui.GetInput();
         }
 
         #region methods ***********************************************************************
@@ -145,7 +146,7 @@ namespace Ovning3
                 if (animal is IPerson)
                 {
                     IPerson person = (IPerson)animal; // Cast Animal to IPerson
-                    Ui.Print(", Sound 2: ");
+                    Ui.Print(", Talk: ");
                     person.Talk();
                 }
 

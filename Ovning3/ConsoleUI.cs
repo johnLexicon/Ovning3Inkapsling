@@ -10,7 +10,7 @@ namespace Ovning3
     public class ConsoleUI : IUI
     {
         /// <summary>
-        /// Read input from Console
+        /// Reads input from Console
         /// </summary>
         /// <returns>User input</returns>
         public string GetInput()
