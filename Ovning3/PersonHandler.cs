@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace OvnSamlingInkapslArvOPolym
+namespace Ovning3
 {
     public static class PersonHandler
     {

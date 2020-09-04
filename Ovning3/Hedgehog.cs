@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace OvnSamlingInkapslArvOPolym
+namespace Ovning3
 {
     class Hedgehog : Animal
     {

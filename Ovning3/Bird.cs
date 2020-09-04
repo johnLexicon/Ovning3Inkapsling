@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace OvnSamlingInkapslArvOPolym
+namespace Ovning3
 {
     public class Bird : Animal
     {
+        private static IUI ui = new ConsoleUI();
         public int WingSpan { get; set; }
 
         public override void DoSound()
         {
-            Console.Write("Tweet");
+            ui.Print("Tweet");
         }
 
         public override string Stats()

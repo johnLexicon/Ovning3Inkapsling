@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Net.Cache;
 using System.Runtime.CompilerServices;
 
-namespace OvnSamlingInkapslArvOPolym
+namespace Ovning3
 {
     class Program
     {
@@ -20,14 +20,11 @@ namespace OvnSamlingInkapslArvOPolym
         #region methods *******************************************************************
         private static void PrintUserErrorUeMessage(List<UserError> userErrors)
         {
-            //Console.WriteLine();
             ui.PrintLine();
             ui.PrintLine("UEMessage(s)");
-            //Console.WriteLine("UEMessage(s)");
-
+            
             foreach (UserError userError in userErrors)
             {
-                //Console.WriteLine(userError.UEMessage());
                 ui.PrintLine(userError.UEMessage());             
             }
         }
@@ -94,7 +91,6 @@ namespace OvnSamlingInkapslArvOPolym
                 EyeColour   = "Blue"
             });
 
-            //Console.WriteLine("Animals:");
             ui.PrintLine("Animals:");
 
             foreach (var animal in animals)
@@ -137,7 +133,6 @@ namespace OvnSamlingInkapslArvOPolym
             {
                 if (animal.GetType() == typeof(Dog))
                 {
-                    //Console.WriteLine(animal.Stats());
                     ui.PrintLine(animal.Stats());
                 }
             }
