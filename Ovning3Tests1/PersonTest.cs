@@ -1,10 +1,9 @@
-using OvnSamlingInkapslArvOPolym;
 using Microsoft.VisualStudio.TestPlatform.Utilities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Globalization;
 using System;
 
-namespace OvningssamlingInkapslingArvOchPolymorfismTests
+namespace Ovning3
 {
     [TestClass]
     public class PersonTest

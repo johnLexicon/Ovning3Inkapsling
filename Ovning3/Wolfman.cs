@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Text;
 
+[assembly: InternalsVisibleTo("Ovning3.Ovning3Tests1")]
 namespace Ovning3
 {
-    class Wolfman : Wolf, IPerson
+    public class Wolfman : Wolf, IPerson
     {
         public void Talk() 
         {

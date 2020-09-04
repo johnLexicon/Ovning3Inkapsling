@@ -1,10 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using OvnSamlingInkapslArvOPolym;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace OvnSamlingInkapslArvOPolym.Tests
+namespace Ovning3
 {
     [TestClass()]
     public class DogTests

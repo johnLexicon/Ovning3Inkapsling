@@ -4,13 +4,13 @@ using System.Text;
 
 namespace Ovning3
 {
-    class Wolf : Animal
+    public class Wolf : Animal
     {
         public string EyeColour { get; set; }
         
         public override void DoSound()
         {
-            Ui.Print("Howl");
+           Ui.Print("Howl");
         }
 
         public override string Stats()
