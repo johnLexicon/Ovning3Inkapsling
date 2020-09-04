@@ -1,6 +1,30 @@
 ﻿using Ovning3;
 using System;
 using System.Collections.Generic;
+/*
+ 13. F: Om vi under utvecklingen kommer fram till att samtliga fåglar behöver ett nytt attribut, i
+vilken klass bör vi lägga det?
+Svar: i Bird
+
+14. F: Om alla djur behöver det nya attributet, vart skulle man lägga det då?
+Svar: i Animal
+
+9. F: Försök att lägga till en häst i listan av hundar. Varför fungerar inte det?
+Svar:En Horse är inte en Dog trots att de båda ärver Animal
+
+10. F: Vilken typ måste listan vara för att alla klasser skall kunna lagras tillsammans?
+Svar: Animal
+
+13. F: Förklara vad det är som händer.
+Svar: ? //TODO
+
+16. Kommer du åt den metoden från Animals listan?
+Svar: Nej
+
+17. F: Varför inte?
+Svar: För att den metoden inte finns i Animal eller någon klass som Animal ärver
+ */
+
 using System.Net.Cache;
 using System.Runtime.CompilerServices;
 
