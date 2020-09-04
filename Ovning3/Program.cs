@@ -92,6 +92,9 @@ namespace Ovning3
             return userErrors;
         }
 
+        /// <summary>
+        /// Constructing and testing animals
+        /// </summary>
         private static void TestingAnimal() // TODO bryta ut
         {
             List<Animal> animals = new List<Animal>();
