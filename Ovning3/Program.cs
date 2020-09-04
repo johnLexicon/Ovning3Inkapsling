@@ -1,6 +1,8 @@
 ﻿using Ovning3;
 using System;
 using System.Collections.Generic;
+
+#region questionsAnswers *****************************************************************************
 /*
  13. F: Om vi under utvecklingen kommer fram till att samtliga fåglar behöver ett nytt attribut, i
 vilken klass bör vi lägga det?
@@ -16,7 +18,7 @@ Svar:En Horse är inte en Dog trots att de båda ärver Animal
 Svar: Animal
 
 13. F: Förklara vad det är som händer.
-Svar: ? //TODO
+Svar: Eftersom alla djur ärver av animal, som har en klass som heter Stats, så kan dessa djurklasser overrida klassen Stats med sina egna versioner av Stats 
 
 16. Kommer du åt den metoden från Animals listan?
 Svar: Nej
@@ -25,7 +27,7 @@ Svar: Nej
 Svar: För att den metoden inte finns i Animal eller någon klass som Animal ärver
 
 11. F: Varför är polymorfism viktigt att behärska?
-Svar:  
+Svar:  Method Overloading gör så att man inte behöver repetera kod. 
 
 12. F: Hur kan polymorfism förändra och förbättra kod via en bra struktur?
 Svar: Method Overloading gör så att man inte behöver repetera kod. 
@@ -34,6 +36,7 @@ Svar: Method Overloading gör så att man inte behöver repetera kod.
 Svar: Ett interface kan bara innehålla deklarationer men en abstrakt klass kan innehålla medlemmar och konstruktorer. 
       En klass kan ärva från flera interfaces men bara från en klass.
  */
+#endregion
 
 using System.Net.Cache;
 using System.Runtime.CompilerServices;
@@ -53,7 +56,7 @@ namespace Ovning3
             PrintUserErrorUeMessage(CreateUserErrorList());
     }
 
-        #region methods *******************************************************************
+        #region methods ***********************************************************************
         private static void PrintUserErrorUeMessage(List<UserError> userErrors)
         {
             Ui.PrintLine();

@@ -31,5 +31,33 @@ namespace Ovning3.Tests
             Assert.AreEqual(expectedWeight, actualWeight);
             Assert.AreEqual(expectedWingSpan, actualWingSpan);
         }
+
+        [TestMethod()]
+        public void StatsTestNotEqual()
+        {
+            // Arrange
+            Bird bird = new Bird();
+            bird.Age = 1;
+            bird.Name = "Pippi";
+            bird.Weight = 2;
+            bird.WingSpan = 5;
+
+            int expectedAge = 2;
+            string expectedName = "Sune";
+            int expectedWeight = 3;
+            int expectedWingSpan = 6;
+
+            // Act
+            int actualAge = bird.Age;
+            string actualName = bird.Name;
+            int actualWeight = bird.Weight;
+            int actualWingSpan = bird.WingSpan;
+
+            // Assert
+            Assert.AreNotEqual(expectedAge, actualAge);
+            Assert.AreNotEqual(expectedName, actualName);
+            Assert.AreNotEqual(expectedWeight, actualWeight);
+            Assert.AreNotEqual(expectedWingSpan, actualWingSpan);
+        }
     }
 }
