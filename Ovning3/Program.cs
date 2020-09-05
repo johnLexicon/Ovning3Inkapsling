@@ -170,7 +170,7 @@ namespace Ovning3
         /// <summary>
         /// Creating User error list
         /// </summary>
-        /// <returns>userErrors</returns>
+        /// <returns>A list of UserErrors</returns>
         private static List<UserError> CreateUserErrorList()
         {
             List<UserError> userErrors = new List<UserError>();
