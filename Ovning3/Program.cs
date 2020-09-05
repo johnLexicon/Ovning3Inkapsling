@@ -102,13 +102,13 @@ namespace Ovning3
                 
                 Ui.Print($"Name: {animal.Name}, Weight: {animal.Weight}, Age: {animal.Age}");
                 
-                if (animal is IPerson) // If person talk instead of DoSound
+                if (animal is IPerson) // If person,not animal, talk instead of DoSound
                 {
                     IPerson person = (IPerson)animal; // Cast Animal to IPerson
                     Ui.Print(", Talk: ");
                     person.Talk();
                 }
-                else // animal
+                else
                 {
                     Ui.Print(", Sound: ");
                     animal.DoSound();
@@ -146,7 +146,7 @@ namespace Ovning3
                 }
             }
 
-            // Creating a list of dogs. I'm doing this in 1 lines here but in 2 lines for animals earlier
+            // Creating a list of dogs. I'm doing this in 1 line here but in 2 lines for animals earlier
             List<Dog> dogs = new List<Dog>( populateDogsList() );
         }
 
@@ -154,7 +154,7 @@ namespace Ovning3
         /// <summary>
         /// Printing User error messages
         /// </summary>
-        /// <param name="userErrors"></param>
+        /// <param name="userErrors">List of user errors</param>
         private static void PrintUserErrorUeMessage(List<UserError> userErrors)
         {
             Ui.PrintLine();
@@ -193,7 +193,7 @@ namespace Ovning3
         /// <summary>
         /// populating a list of dogs
         /// </summary>
-        /// <returns>List of dogs</returns>
+        /// <returns>A list of dogs</returns>
         private static List<Dog> populateDogsList()
         {
             List<Dog> dogs = new List<Dog>();
@@ -222,7 +222,7 @@ namespace Ovning3
                 Iq = 35
             });
             
-            // trying to add a horse to the list of dogs
+            // trying to add a horse to the list of dogs. Doesn't work
             /*
             dogs.Add(new horse(){ Age = 15, Name = "Blacken", Weight = 100 });
             */
@@ -234,7 +234,7 @@ namespace Ovning3
         /// <summary>
         /// populating a list of animals
         /// </summary>
-        /// <returns>List of animals</returns>
+        /// <returns>A list of animals</returns>
         private static List<Animal> PopulateAnimalsList()
         {
             List<Animal> animals = new List<Animal>();
