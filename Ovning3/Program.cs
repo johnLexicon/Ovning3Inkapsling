@@ -55,128 +55,36 @@ namespace Ovning3
 
         #region methods ***********************************************************************
 
-        private static List<Dog> populateDogsList()
-        {
-            List<Dog> dogs = new List<Dog>();
-
-            dogs.Add(new Dog()
-            {
-                Age = 11,
-                Name = "Larsa",
-                Weight = 18,
-                Iq = 28
-            });
-
-            dogs.Add(new Dog()
-            {
-                Age = 12,
-                Name = "Fido",
-                Weight = 19,
-                Iq = 30
-            });
-
-            dogs.Add(new Dog()
-            {
-                Age = 4,
-                Name = "Lissen",
-                Weight = 29,
-                Iq = 35
-            });
-
-            return dogs;
-        } 
-        
-
-        private static List<Animal> PopulateAnimalsList()
-        {
-            List<Animal> animals = new List<Animal>();
-
-            animals.Add(new Pelican()
-            {
-                beakVolume = 10,
-                Age = 2,
-                Name = "Kurt",
-                Weight = 20,
-                WingSpan = 5
-            });
-
-            animals.Add(new Dog()
-            {
-                Iq = 24,
-                Age = 5,
-                Name = "Pluffsan",
-                Weight = 25
-            });
-
-            animals.Add(new Dog()
-            {
-                Iq = 34,
-                Age = 9,
-                Name = "Plupp",
-                Weight = 19
-            });
-
-            animals.Add(new Horse()
-            {
-                Age = 4,
-                Name = "Legolas",
-                Weight = 125,
-                maneColour = "Brown"
-            });
-
-            animals.Add(new Wolfman()
-            {
-                Age = 35,
-                Name = "Ulrik",
-                Weight = 75,
-                EyeColour = "Blue"
-            });
-
-            return animals;
-        }
-
-
         /// <summary>
-        /// Printing User error messages
+        /// Constructing and testing persons
         /// </summary>
-        /// <param name="userErrors"></param>
-        private static void PrintUserErrorUeMessage(List<UserError> userErrors)
+        private static void TestingPerson()
         {
-            Ui.PrintLine();
-            Ui.PrintLine("UEMessage(s):");
-            
-            foreach (UserError userError in userErrors)
+            Person person = null;
+
+            try
             {
-                Ui.PrintLine(userError.UEMessage());             
+                person = new Person("Stefan", "Elmgren");
             }
+            catch (Exception) 
+            { 
+            }
+
+            PersonHandler.SetAge(person, 53);
+            Person person2 = PersonHandler.CreatePerson(10, "Lisa", "Karlsson", 140, 35);
+            PersonHandler.SetFirstName(person2, "Gittan");
+            Person person3 = PersonHandler.CreatePerson(13, "Arne", "Olsson", 175, 81);
+            PersonHandler.SetWeight(person3, 83);
+            PersonHandler.SetLastName(person3, "Larsson");
+            PersonHandler.SetHeight(person3, 165);
+            PersonHandler.SetAge(person3, 14);
         }
 
-        /// <summary>
-        /// Creating User error list
-        /// </summary>
-        /// <returns>userErrors</returns>
-        private static List<UserError> CreateUserErrorList() 
-        {
-            List<UserError> userErrors = new List<UserError>();
-
-            TextInputError textInputError = new TextInputError();
-            userErrors.Add(textInputError);
-            NumericInputError numericInputError = new NumericInputError();
-            userErrors.Add(numericInputError);
-            DivisionByZeroerror divisionByZeroError = new DivisionByZeroerror();
-            userErrors.Add(divisionByZeroError);
-            ArrayInputError arrayInputError = new ArrayInputError();
-            userErrors.Add(arrayInputError);
-            WrongNumberArgumentError wrongNumberArgumentError = new WrongNumberArgumentError();
-            userErrors.Add(wrongNumberArgumentError);
-
-            return userErrors;
-        }
 
         /// <summary>
         /// Constructing and testing animals
         /// </summary>
-        private static void TestingAnimal() // TODO bryta ut
+        private static void TestingAnimal()
         {
             List<Animal> animals = new List<Animal>();
             animals = PopulateAnimalsList();
@@ -235,44 +143,140 @@ namespace Ovning3
             // Skapa en lista för hundar
             List<Dog> dogs = new List<Dog>();
             dogs = populateDogsList();
-
-            // Försök att lägga till en häst i listan av hundar
-
-            /*
-            dogs.Add(new horse()
-            {
-                Age = 15,
-                Name = "Blacken",
-                Weight = 100
-            });
-            */
         }
+
 
         /// <summary>
-        /// instansiera en PersonHandler. Skapa därigenom några personer och testa era metoder
+        /// Printing User error messages
         /// </summary>
-        private static void TestingPerson()
+        /// <param name="userErrors"></param>
+        private static void PrintUserErrorUeMessage(List<UserError> userErrors)
         {
-            Person person = null;
-
-            try
+            Ui.PrintLine();
+            Ui.PrintLine("UEMessage(s):");
+            
+            foreach (UserError userError in userErrors)
             {
-                person = new Person("Stefan", "Elmgren");
+                Ui.PrintLine(userError.UEMessage());             
             }
-            catch (Exception) 
-            { 
-            }
-
-            PersonHandler.SetAge(person, 53);
-            Person person2 = PersonHandler.CreatePerson(10, "Lisa", "Karlsson", 140, 35);
-            PersonHandler.SetFirstName(person2, "Gittan");
-            Person person3 = PersonHandler.CreatePerson(13, "Arne", "Olsson", 175, 81);
-            PersonHandler.SetWeight(person3, 83);
-            PersonHandler.SetLastName(person3, "Larsson");
-            PersonHandler.SetHeight(person3, 165);
-            PersonHandler.SetAge(person3, 14);
         }
 
+
+        /// <summary>
+        /// Creating User error list
+        /// </summary>
+        /// <returns>userErrors</returns>
+        private static List<UserError> CreateUserErrorList()
+        {
+            List<UserError> userErrors = new List<UserError>();
+
+            TextInputError textInputError = new TextInputError();
+            userErrors.Add(textInputError);
+            NumericInputError numericInputError = new NumericInputError();
+            userErrors.Add(numericInputError);
+            DivisionByZeroerror divisionByZeroError = new DivisionByZeroerror();
+            userErrors.Add(divisionByZeroError);
+            ArrayInputError arrayInputError = new ArrayInputError();
+            userErrors.Add(arrayInputError);
+            WrongNumberArgumentError wrongNumberArgumentError = new WrongNumberArgumentError();
+            userErrors.Add(wrongNumberArgumentError);
+
+            return userErrors;
+        }
+
+
+        /// <summary>
+        /// populating a list of dogs
+        /// </summary>
+        /// <returns>List of dogs</returns>
+        private static List<Dog> populateDogsList()
+        {
+            List<Dog> dogs = new List<Dog>();
+
+            dogs.Add(new Dog()
+            {
+                Age = 11,
+                Name = "Larsa",
+                Weight = 18,
+                Iq = 28
+            });
+
+            dogs.Add(new Dog()
+            {
+                Age = 12,
+                Name = "Fido",
+                Weight = 19,
+                Iq = 30
+            });
+
+            dogs.Add(new Dog()
+            {
+                Age = 4,
+                Name = "Lissen",
+                Weight = 29,
+                Iq = 35
+            });
+            
+            // trying to add a horse to the list of dogs
+            /*
+            dogs.Add(new horse(){ Age = 15, Name = "Blacken", Weight = 100 });
+            */
+
+            return dogs;
+        }
+
+
+        /// <summary>
+        /// populating a list of animals
+        /// </summary>
+        /// <returns>List of animals</returns>
+        private static List<Animal> PopulateAnimalsList()
+        {
+            List<Animal> animals = new List<Animal>();
+
+            animals.Add(new Pelican()
+            {
+                beakVolume = 10,
+                Age = 2,
+                Name = "Kurt",
+                Weight = 20,
+                WingSpan = 5
+            });
+
+            animals.Add(new Dog()
+            {
+                Iq = 24,
+                Age = 5,
+                Name = "Pluffsan",
+                Weight = 25
+            });
+
+            animals.Add(new Dog()
+            {
+                Iq = 34,
+                Age = 9,
+                Name = "Plupp",
+                Weight = 19
+            });
+
+            animals.Add(new Horse()
+            {
+                Age = 4,
+                Name = "Legolas",
+                Weight = 125,
+                maneColour = "Brown"
+            });
+
+            animals.Add(new Wolfman()
+            {
+                Age = 35,
+                Name = "Ulrik",
+                Weight = 75,
+                EyeColour = "Blue"
+            });
+
+            return animals;
+        }
 
         #endregion
     }
