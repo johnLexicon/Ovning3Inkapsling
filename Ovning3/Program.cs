@@ -34,6 +34,7 @@ Svar: Ett interface kan bara innehålla deklarationer men en abstrakt klass kan 
  */
 #endregion
 
+
 using System;
 using System.Collections.Generic;
 
@@ -86,12 +87,13 @@ namespace Ovning3
         /// </summary>
         private static void TestingAnimal()
         {
+            // Creating a list of animals
             List<Animal> animals = new List<Animal>();
             animals = PopulateAnimalsList();
             
             Ui.PrintLine("Animals:");
-            
-            // Skriv ut vilka djur som finns i listan med hjälp av en foreach-loop
+
+            // Printing the animals in the list with the help of a foreach-loop
             foreach (var animal in animals)
             {
                 // Get the objectname without the "Ovning3" before the dot
@@ -109,7 +111,7 @@ namespace Ovning3
                     person.Talk();
                 }
 
-                // Hitta ett sätt att skriva ut din nya metod för dog genom en foreach på Animals
+                // Finding a way to print out dog through a foreach on Animals
                 if (animal is Dog)
                 {
                     Dog dog = (Dog)animal; // Cast Animal to Dog
@@ -140,7 +142,7 @@ namespace Ovning3
                 }
             }
 
-            // Skapa en lista för hundar
+            // Creating a list of dogs
             List<Dog> dogs = new List<Dog>();
             dogs = populateDogsList();
         }
