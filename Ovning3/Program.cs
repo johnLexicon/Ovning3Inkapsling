@@ -57,7 +57,7 @@ namespace Ovning3
         #region methods ***********************************************************************
 
         /// <summary>
-        /// Constructing and testing persons
+        /// Constructing and "testing" persons
         /// </summary>
         private static void TestingPerson()
         {
@@ -83,7 +83,7 @@ namespace Ovning3
 
 
         /// <summary>
-        /// Constructing and testing animals
+        /// Constructing and "testing" animals
         /// </summary>
         private static void TestingAnimal()
         {
@@ -98,17 +98,20 @@ namespace Ovning3
             {
                 // Get the objectname without the "Ovning3" before the dot
                 string[] objectName = animal.GetType().ToString().Split('.');
-                Ui.Print($"Type {objectName[1]}, ");
+                Ui.Print($"Type: {objectName[1]}, ");
                 
-                Ui.Print($"Name: {animal.Name}, Weight: {animal.Weight}, Age: {animal.Age}, ");
-                Ui.Print("Sound: ");
-                animal.DoSound();
-
-                if (animal is IPerson)
+                Ui.Print($"Name: {animal.Name}, Weight: {animal.Weight}, Age: {animal.Age}");
+                
+                if (animal is IPerson) // If person talk instead of DoSound
                 {
                     IPerson person = (IPerson)animal; // Cast Animal to IPerson
                     Ui.Print(", Talk: ");
                     person.Talk();
+                }
+                else // animal
+                {
+                    Ui.Print(", Sound: ");
+                    animal.DoSound();
                 }
 
                 // Finding a way to print out dog through a foreach on Animals
@@ -124,7 +127,7 @@ namespace Ovning3
             Ui.PrintLine();
             Ui.PrintLine("Animal stats:");
 
-            // Skriv ut samtliga Animals Stats() genom en foreach loop
+            // Print all Animal Stats() with a foreach loop
             foreach (var animal in animals)
             {
                 Ui.PrintLine(animal.Stats());
@@ -133,7 +136,8 @@ namespace Ovning3
             Ui.PrintLine();
             Ui.PrintLine("Dog stats:");
 
-            // Skriv ut Stats() metoden enbart för alla hundar genom en foreach på Animals
+            // Skriv ut Stats() metoden enbart för alla hundar genom en foreach på Animals 
+            // TODO translate
             foreach (var animal in animals)
             {
                 if (animal.GetType() == typeof(Dog))
