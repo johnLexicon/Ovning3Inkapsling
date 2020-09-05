@@ -154,7 +154,7 @@ namespace Ovning3
         /// <summary>
         /// Printing User error messages
         /// </summary>
-        /// <param name="userErrors">List of user errors</param>
+        /// <param name="userErrors">A list of user errors</param>
         private static void PrintUserErrorUeMessage(List<UserError> userErrors)
         {
             Ui.PrintLine();
