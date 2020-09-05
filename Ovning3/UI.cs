@@ -6,7 +6,7 @@
     internal class UI :IUI
     {
         
-        ConsoleUI consoleUI = new ConsoleUI(); // Change for wanted IU class
+        ConsoleUI consoleUI = new ConsoleUI();
 
         /// <summary>
         /// Reads input
