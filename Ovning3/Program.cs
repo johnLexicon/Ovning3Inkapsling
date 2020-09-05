@@ -55,6 +55,81 @@ namespace Ovning3
 
         #region methods ***********************************************************************
 
+        private static List<Dog> populateDogsList(List<Dog> dogs)
+        {
+            dogs.Add(new Dog()
+            {
+                Age = 11,
+                Name = "Larsa",
+                Weight = 18,
+                Iq = 28
+            });
+
+            dogs.Add(new Dog()
+            {
+                Age = 12,
+                Name = "Fido",
+                Weight = 19,
+                Iq = 30
+            });
+
+            dogs.Add(new Dog()
+            {
+                Age = 4,
+                Name = "Lissen",
+                Weight = 29,
+                Iq = 35
+            });
+
+            return dogs;
+        }  
+
+        private static List<Animal> PopulateAnimalsList(List<Animal> animals)
+        {
+            animals.Add(new Pelican()
+            {
+                beakVolume = 10,
+                Age = 2,
+                Name = "Kurt",
+                Weight = 20,
+                WingSpan = 5
+            });
+
+            animals.Add(new Dog()
+            {
+                Iq = 24,
+                Age = 5,
+                Name = "Pluffsan",
+                Weight = 25
+            });
+
+            animals.Add(new Dog()
+            {
+                Iq = 34,
+                Age = 9,
+                Name = "Plupp",
+                Weight = 19
+            });
+
+            animals.Add(new Horse()
+            {
+                Age = 4,
+                Name = "Legolas",
+                Weight = 125,
+                maneColour = "Brown"
+            });
+
+            animals.Add(new Wolfman()
+            {
+                Age = 35,
+                Name = "Ulrik",
+                Weight = 75,
+                EyeColour = "Blue"
+            });
+
+            return animals;
+        }
+
         /// <summary>
         /// Printing User error messages
         /// </summary>
@@ -98,48 +173,8 @@ namespace Ovning3
         private static void TestingAnimal() // TODO bryta ut
         {
             List<Animal> animals = new List<Animal>();
-
-            animals.Add(new Pelican() 
-            {
-                beakVolume  = 10, 
-                Age         = 2,
-                Name        = "Kurt",
-                Weight      = 20,
-                WingSpan    = 5
-            });
-
-            animals.Add(new Dog()
-            {
-                Iq      = 24,
-                Age     = 5,
-                Name    = "Pluffsan",
-                Weight  = 25
-            });
-
-            animals.Add(new Dog()
-            {
-                Iq      = 34,
-                Age     = 9,
-                Name    = "Plupp",
-                Weight  = 19
-            });
-
-            animals.Add(new Horse()
-            {
-                Age         = 4,
-                Name        = "Legolas",
-                Weight      = 125,
-                maneColour  = "Brown"
-            });
-
-            animals.Add(new Wolfman()
-            {
-                Age         = 35,
-                Name        = "Ulrik",
-                Weight      = 75,
-                EyeColour   = "Blue"
-            });
-
+            animals = PopulateAnimalsList(animals);
+            
             Ui.PrintLine("Animals:");
             
             // Skriv ut vilka djur som finns i listan med hjälp av en foreach-loop
@@ -193,31 +228,7 @@ namespace Ovning3
 
             // Skapa en lista för hundar
             List<Dog> dogs = new List<Dog>();
-
-            dogs.Add(new Dog()
-            {
-                Age     = 11,
-                Name    = "Larsa",
-                Weight  = 18,
-                Iq      = 28
-            });
-
-            dogs.Add(new Dog()
-            {
-                Age     = 12,
-                Name    = "Fido",
-                Weight  = 19,
-                Iq      = 30
-            });
-
-            dogs.Add(new Dog()
-            {
-                Age     = 4,
-                Name    = "Lissen",
-                Weight  = 29,
-                Iq      = 35
-            });
-
+            dogs = populateDogsList(dogs);
 
             // Försök att lägga till en häst i listan av hundar
 
@@ -255,6 +266,8 @@ namespace Ovning3
             PersonHandler.SetHeight(person3, 165);
             PersonHandler.SetAge(person3, 14);
         }
+
+
         #endregion
     }
 }
