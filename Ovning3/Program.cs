@@ -55,8 +55,10 @@ namespace Ovning3
 
         #region methods ***********************************************************************
 
-        private static List<Dog> populateDogsList(List<Dog> dogs)
+        private static List<Dog> populateDogsList()
         {
+            List<Dog> dogs = new List<Dog>();
+
             dogs.Add(new Dog()
             {
                 Age = 11,
@@ -82,10 +84,13 @@ namespace Ovning3
             });
 
             return dogs;
-        }  
+        } 
+        
 
-        private static List<Animal> PopulateAnimalsList(List<Animal> animals)
+        private static List<Animal> PopulateAnimalsList()
         {
+            List<Animal> animals = new List<Animal>();
+
             animals.Add(new Pelican()
             {
                 beakVolume = 10,
@@ -130,6 +135,7 @@ namespace Ovning3
             return animals;
         }
 
+
         /// <summary>
         /// Printing User error messages
         /// </summary>
@@ -173,7 +179,7 @@ namespace Ovning3
         private static void TestingAnimal() // TODO bryta ut
         {
             List<Animal> animals = new List<Animal>();
-            animals = PopulateAnimalsList(animals);
+            animals = PopulateAnimalsList();
             
             Ui.PrintLine("Animals:");
             
@@ -228,7 +234,7 @@ namespace Ovning3
 
             // Skapa en lista för hundar
             List<Dog> dogs = new List<Dog>();
-            dogs = populateDogsList(dogs);
+            dogs = populateDogsList();
 
             // Försök att lägga till en häst i listan av hundar
 
