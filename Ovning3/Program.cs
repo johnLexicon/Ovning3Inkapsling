@@ -88,9 +88,9 @@ namespace Ovning3
         private static void TestingAnimal()
         {
             // Creating a list of animals
-            List<Animal> animals = new List<Animal>();
-            animals = PopulateAnimalsList();
-            
+            List<Animal> animals = new List<Animal>();  // I'm doing this in 2 lines here but in 1 line for dogs later
+            animals = PopulateAnimalsList();            // I'm doing this in 2 lines here but in 1 line for dogs later
+
             Ui.PrintLine("Animals:");
 
             // Printing the animals in the list with the help of a foreach-loop
@@ -142,9 +142,8 @@ namespace Ovning3
                 }
             }
 
-            // Creating a list of dogs
-            List<Dog> dogs = new List<Dog>();
-            dogs = populateDogsList();
+            // Creating a list of dogs. I'm doing this in 1 lines here but in 2 lines for animals earlier
+            List<Dog> dogs = new List<Dog>( populateDogsList() );
         }
 
 
