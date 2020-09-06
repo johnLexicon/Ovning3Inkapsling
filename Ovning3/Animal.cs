@@ -4,6 +4,11 @@
     {
         private static IUI ui = new UI();
 
+        protected Animal()
+        {
+        }
+
+
         #region properties **********************************************************************************
 
         public string Name { get; set; }
