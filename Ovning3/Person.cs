@@ -70,7 +70,7 @@ namespace Ovning3
                 }
                 else
                 {
-                    throw new System.ArgumentException("First name should contain between 3 and 15 letters!");
+                    throw new System.ArgumentException("Last name should contain between 3 and 15 letters!");
                 }
             }
         }
