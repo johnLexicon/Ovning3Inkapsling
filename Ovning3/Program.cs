@@ -67,8 +67,8 @@ namespace Ovning3
             {
                 person = new Person("Stefan", "Elmgren");
             }
-            catch (Exception) 
-            { 
+            catch (Exception)
+            {
             }
 
             PersonHandler.SetAge(person, 53);
@@ -99,9 +99,9 @@ namespace Ovning3
                 // Get the objectname without the "Ovning3" before the dot
                 string[] objectName = animal.GetType().ToString().Split('.');
                 Ui.Print($"Type: {objectName[1]}, ");
-                
+
                 Ui.Print($"Name: {animal.Name}, Weight: {animal.Weight}, Age: {animal.Age}");
-                
+
                 if (animal is IPerson) // If person,not animal, talk instead of DoSound
                 {
                     IPerson person = (IPerson)animal; // Cast Animal to IPerson
@@ -147,7 +147,7 @@ namespace Ovning3
             }
 
             // Creating a list of dogs. I'm doing this in 1 line here but in 2 lines for animals earlier
-            List<Dog> dogs = new List<Dog>( populateDogsList() );
+            List<Dog> dogs = new List<Dog>(populateDogsList());
         }
 
 
@@ -159,10 +159,10 @@ namespace Ovning3
         {
             Ui.PrintLine();
             Ui.PrintLine("UEMessage(s):");
-            
+
             foreach (UserError userError in userErrors)
             {
-                Ui.PrintLine(userError.UEMessage());             
+                Ui.PrintLine(userError.UEMessage());
             }
         }
 
@@ -221,7 +221,7 @@ namespace Ovning3
                 Weight = 29,
                 Iq = 35
             });
-            
+
             // trying to add a horse to the list of dogs. Doesn't work
             /*
             dogs.Add(new horse(){ Age = 15, Name = "Blacken", Weight = 100 });
