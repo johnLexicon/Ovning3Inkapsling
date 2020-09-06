@@ -30,7 +30,7 @@ Svar: Method Overloading gör så att man inte behöver repetera kod.
 
 13. F: Vad är det för en skillnad på en Abstrakt klass och ett Interface?
 Svar: Ett interface kan bara innehålla deklarationer men en abstrakt klass kan innehålla medlemmar och konstruktorer. 
-      En klass kan ärva från flera interfaces men bara från en klass.
+      En klass kan ärva från flera interfaces men bara från en klass. Man kan inte instansiera, skapa, en abstract klass
  */
 #endregion
 
