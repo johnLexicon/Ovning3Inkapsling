@@ -1,6 +1,6 @@
 ﻿namespace Ovning3
 {
-    class Hedgehog : Animal
+    public class Hedgehog : Animal
     {
         public int NrOfSpikes { get; set; }
 
