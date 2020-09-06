@@ -58,15 +58,15 @@ namespace Ovning3
         {
             // Arrange
             Person person;
-            int expected = 175;
+            double expected = 175;
 
             // Act
             person = PersonHandler.CreatePerson(53, "Stefan", "Elmgren", 180, 83);
             PersonHandler.SetHeight(person, 175);
-            int actual = person.Height;
+            double actual = person.Height;
 
             // Assert
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(expected, actual, 0.1);
         }
 
         [TestMethod()]
@@ -82,7 +82,7 @@ namespace Ovning3
             double actual = person.Weight;
 
             // Assert
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(expected, actual, 0.1);
         }
 
         [TestMethod()]

@@ -72,7 +72,7 @@ namespace Ovning3
             }
         }
 
-        public int Height { get; set; }
+        public double Height { get; set; }
         public double Weight { get; set; }
 
         #endregion
@@ -93,7 +93,7 @@ namespace Ovning3
         }
 
         // Constructor 3
-        public Person(int age, string fname, string lname, int height, double weight) : this(fname, lname, age) // Calling constructor 2
+        public Person(int age, string fname, string lname, double height, double weight) : this(fname, lname, age) // Calling constructor 2
         {
             Height = height;
             Weight = weight;

@@ -12,7 +12,6 @@ namespace Ovning3
             {
                 pers.FName = firstName;
             }
-            
         }
 
         public static void SetLastName(Person pers, string lastName)
@@ -31,7 +30,7 @@ namespace Ovning3
             }
         }
 
-        public static void SetHeight(Person pers, int height)
+        public static void SetHeight(Person pers, double height)
         {
             if (pers != null)
             {
@@ -47,7 +46,7 @@ namespace Ovning3
             }
         }
 
-        public static Person CreatePerson(int age, string fname, string lname, int height, double weight)
+        public static Person CreatePerson(int age, string fname, string lname, double height, double weight)
         {
             Person person = new Person(age, fname, lname, height, weight);
             return person;
