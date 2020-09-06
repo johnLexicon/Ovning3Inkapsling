@@ -2,7 +2,7 @@
 {
     public abstract class Animal
     {
-        private static IUI ui = new ConsoleUI();
+        private static IUI ui = new UI();
 
         #region properties **********************************************************************************
 
