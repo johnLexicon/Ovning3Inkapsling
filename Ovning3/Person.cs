@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Channels;
+﻿using System.Text;
 
 // TODO add/translate comments
 /// <summary>
@@ -108,23 +105,25 @@ namespace Ovning3
         #region methods ********************************************************************************
         public override string ToString()
         {
-            string message = $"First name: {FName}, Last name: {LName}";
+            StringBuilder message = new StringBuilder();
+            message.Append($"First name: {FName}, Last name: {LName}");
 
             if (Age > 0)
             {
-                message += $", Age: {Age}";
+                message.Append($", Age: {Age}");
             }
 
             if (Height > 0)
             {
-                message += $", Height: {Height} cm";
+                message.Append($", Height: {Height} cm");
             }
 
             if (Weight > 0)
             {
-                message += $", Weight: {Weight} kilos";
+                message.Append($", Weight: {Weight} kilos");
             }
-            return message;
+
+            return message.ToString();
         }
         #endregion
     }
