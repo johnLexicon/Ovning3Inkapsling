@@ -8,5 +8,10 @@
         {
             return $"{base.Stats()}, Leg length: {LegLength.ToString()}";
         }
+
+        public override void DoSound()
+        {
+            System.Console.WriteLine("Flaming sound");
+        }
     }
 }

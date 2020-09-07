@@ -1,4 +1,6 @@
-﻿namespace Ovning3
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace Ovning3
 {
     class Pelican : Bird
     {
@@ -7,6 +9,11 @@
         public override string Stats()
         {
             return $"{base.Stats()}, Beak volume: {beakVolume.ToString()}";
+        }
+
+        public override void DoSound()
+        {
+            System.Console.WriteLine("Pelican sound");
         }
     }
 }

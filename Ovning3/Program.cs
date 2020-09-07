@@ -96,23 +96,29 @@ namespace Ovning3
             // Printing the animals in the list with the help of a foreach-loop
             foreach (var animal in animals)
             {
+                //You can use the Name property e.g animal.GetType().Name which returns the class name.
                 // Get the objectname without the "Ovning3" before the dot
                 string[] objectName = animal.GetType().ToString().Split('.');
                 Ui.Print($"Type: {objectName[1]}, ");
 
                 Ui.Print($"Name: {animal.Name}, Weight: {animal.Weight}, Age: {animal.Age}");
 
-                if (animal is IPerson) // If person,not animal, talk instead of DoSound
+                //Can cast directly in the condition.
+                if (animal is IPerson person) // If person,not animal, talk instead of DoSound
                 {
-                    IPerson person = (IPerson)animal; // Cast Animal to IPerson
+                    //IPerson person = (IPerson)animal; // Cast Animal to IPerson
                     Ui.Print(", Talk: ");
                     person.Talk();
                 }
-                else
-                {
-                    Ui.Print(", Sound: ");
-                    animal.DoSound();
-                }
+                // No need for else Wolfman inherits the wolfs DoSound() implementation.
+                //else
+                //{
+                //    Ui.Print(", Sound: ");
+                //    animal.DoSound();
+                //}
+
+                Ui.Print(", Sound: ");
+                animal.DoSound();
 
                 // Finding a way to print out dog through a foreach on Animals
                 if (animal is Dog)

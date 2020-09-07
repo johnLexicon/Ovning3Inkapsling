@@ -8,5 +8,10 @@
         {
             return $"{base.Stats()}, Neck length: {NeckLength.ToString()}";
         }
+
+        public override void DoSound()
+        {
+            System.Console.WriteLine("Swan sound");
+        }
     }
 }

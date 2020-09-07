@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using OvnSamlingInkapslArvOPolym;
+using Ovning3;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -62,12 +62,12 @@ namespace OvnSamlingInkapslArvOPolym.Tests
         {
             // Arrange
             Person person;
-            int expected = 175;
+            double expected = 175;
 
             // Act
             person = PersonHandler.CreatePerson(53, "Stefan", "Elmgren", 180, 83);
             PersonHandler.SetHeight(person, 175);
-            int actual = person.Height;
+            double actual = person.Height;
 
             // Assert
             Assert.AreEqual(expected, actual);
